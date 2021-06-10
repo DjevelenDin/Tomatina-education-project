@@ -1,0 +1,57 @@
+footer{
+  padding: 50px;
+}
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+}
+.app-footer-block {
+  display: flex;
+}
+.app-footer-flex {
+  display: flex;
+  align-items: center;
+}
+.app-footer-block-line {
+  align-items: flex-start;
+}
+.app-footer-block-line span {
+  margin: 10px 0px;
+}
+.app-footer-block-column {
+  flex-direction: column;
+}
+.app-footer-block-map {
+  width: 25%;
+}
+.app-footer-map p {
+  margin: 5px 10px;
+}
+.fa-map-marker-alt {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+}
+.app-footer-map-span {
+  color: gray;
+  margin: 5px 20px;
+}
+.fa-clock {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+}
+.fa-facebook-f {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+.fa-instagram {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+.icons-margin{
+  margin: 0px 20px;
+}
