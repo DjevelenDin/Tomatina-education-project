@@ -41,6 +41,7 @@ input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
+a{color: #000;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 li{list-style: none;}
@@ -59,4 +60,10 @@ i{
 }
 .app{
 	margin: 0px 0px 80px 0px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.app-main-section{
+	flex: 1 0 auto;
 }

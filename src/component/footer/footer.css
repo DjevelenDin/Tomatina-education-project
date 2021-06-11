@@ -1,5 +1,6 @@
 footer{
   padding: 50px;
+  flex: 0 0 auto;
 }
 .app-footer {
   display: flex;

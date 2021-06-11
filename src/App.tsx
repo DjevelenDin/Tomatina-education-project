@@ -1,26 +1,44 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route, } from 'react-router-dom';
+import {withFoodService} from './component/hoc-helpers'
 import Header from './component/header/header';
+import Home from './component/pages/home';
 import Footer from './component/footer/footer';
+import Menu from './component/pages/menu';
+import Response from './component/pages/response';
+import Delivery from './component/pages/delivery';
+import LogIn from './component/pages/logIn';
 
+interface IAppProps {
+  foodService?:any;
+}
+class App extends Component<IAppProps> {
 
-export default class App extends Component {
   render() {
+    const {foodService} = this.props;
+    foodService.getProductsList();
     return (
-      <div className="container app">
-        <Header />
-        {/* <p> */}
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia id quasi beatae? Asperiores obcaecati voluptatem voluptatibus necessitatibus libero voluptates consequatur adipisci ipsam perspiciatis. Recusandae tenetur fuga quis dolorem sequi non eius ab minima, ex delectus suscipit sint molestias sunt odio? Veniam in repudiandae recusandae, vel possimus ullam omnis ipsa minima quae facilis dolor cupiditate laudantium nihil a, eos, sequi provident? Saepe aperiam velit, cumque, sint pariatur hic aliquam modi qui nulla soluta ab fugiat, necessitatibus inventore officiis debitis corporis numquam commodi non a voluptas? Culpa officiis facere quasi, eaque hic incidunt quia harum accusantium atque aut magni fugiat repudiandae molestias sequi ut quidem nostrum omnis cumque laudantium nemo laborum illum saepe rerum! Quis voluptatem nemo excepturi nam neque. Voluptates animi voluptas consequatur eius ratione ipsa similique et quibusdam, dolor molestiae! Inventore voluptatibus tempora veritatis numquam eligendi perspiciatis earum, dolore doloribus laudantium tempore ipsam quasi corporis expedita aliquam? Nostrum odio optio quam possimus nihil sed nesciunt atque delectus dolorem pariatur laudantium, necessitatibus error repudiandae vero veritatis maiores rem mollitia incidunt eum voluptatum quae. Minus nobis aspernatur reiciendis iusto voluptates iure sapiente alias ducimus omnis natus, repellat molestiae eaque veritatis quae incidunt eum quam quos minima magni debitis excepturi dolor tempore ab recusandae. Sed est dolores earum consequatur totam, dolor perspiciatis error deleniti quaerat enim placeat? Saepe nobis porro ut facilis laboriosam eos mollitia nisi voluptate, iste dolores cum quo perferendis distinctio eum odio veniam sapiente incidunt dolore eaque numquam! Ratione ex saepe commodi alias repellat id minima necessitatibus in animi consequatur quam ea sed qui, error iusto ipsam itaque aliquam cumque possimus architecto rerum totam a sapiente! Placeat quidem facere iusto eaque eum corporis laboriosam fugit reprehenderit aliquam maiores voluptatem itaque, nostrum natus, minima nam magni quaerat incidunt ab laborum recusandae! Illo velit assumenda et beatae exercitationem fugit suscipit! Tenetur nulla fuga sit iure voluptate amet iste ullam. Facere esse molestiae recusandae obcaecati voluptatum minus quidem explicabo maiores, dolorum consectetur illum eos harum ea earum ex non minima sequi corrupti molestias! Doloribus libero iusto ex dolorem nobis corrupti recusandae in error rerum, labore est dignissimos odio expedita tempora ut voluptates exercitationem voluptatem minus! Cupiditate dolorum, mollitia molestias labore ut consequuntur repudiandae, non vero velit voluptatum, vel architecto quaerat autem? Blanditiis molestiae asperiores laborum optio, fugit iusto incidunt? Atque impedit temporibus dicta nobis dolor quis, voluptatem aliquid aliquam sit quia veritatis omnis quae quas consectetur ducimus enim! Dolore dolores rem voluptates perferendis eius commodi unde blanditiis libero quibusdam, eveniet eum delectus, quas quidem at quisquam reprehenderit aspernatur tempore odio incidunt? Aliquid nam odio numquam accusamus consequatur at tempore ipsum nulla fugiat magnam alias corporis delectus excepturi libero labore earum ratione illo non rerum tenetur molestiae, a aliquam distinctio fuga? Similique at a cum facere fuga sunt voluptate. Deserunt reiciendis repellendus dolor ullam placeat veritatis consequatur animi necessitatibus vero fuga laborum quibusdam minus voluptates consequuntur, eveniet maiores laboriosam, unde dignissimos ea odio? Qui, animi consequuntur nesciunt nisi eveniet ipsam nemo vel nam minima amet molestias optio incidunt fugit totam tenetur. Animi, eligendi vel. Odit commodi ex nobis, officia ducimus sed. Ea explicabo sed unde nemo nostrum expedita quaerat officia eveniet id, nesciunt officiis magnam reprehenderit veniam dolorum, autem ipsa? Temporibus, illo nisi quod illum earum mollitia qui necessitatibus veniam rem iste! Labore voluptas ipsa, obcaecati minus pariatur, magni amet fugit similique mollitia quidem odit ab laudantium praesentium atque nesciunt reprehenderit vitae dolor deserunt corporis ullam? Ipsam adipisci facere assumenda vel. Omnis harum voluptatibus error, magnam quis atque. Magni, aliquid. Veniam cum modi perferendis blanditiis ipsam incidunt, tempora nihil laudantium ex rem beatae itaque magni qui vero deleniti. Et ipsam pariatur fugiat? Ipsum rem numquam esse ipsam ratione repudiandae, dolore eum repellat accusantium minus architecto fugiat expedita incidunt nesciunt saepe sequi obcaecati reiciendis sunt veritatis magnam corrupti officia in tempora. Suscipit rem magni id saepe officia, minima quam repudiandae repellendus voluptatum harum vel, beatae quasi tempore! Quasi, repellat voluptates tenetur veniam nisi iure nostrum neque sit. At, laudantium molestiae temporibus consectetur assumenda earum reprehenderit! Aliquam soluta doloribus, aspernatur rem voluptatibus aperiam provident amet quae explicabo eos pariatur deleniti non assumenda esse unde ea. Vel, officiis fugit aperiam explicabo illum quae, quisquam nihil libero quos corporis sapiente natus voluptas rerum ullam deleniti cumque. Aliquid voluptas assumenda placeat fugiat amet? Modi fugit tenetur dicta expedita necessitatibus, enim facere omnis quasi! Laborum hic non suscipit voluptate accusamus repellendus at illo sit cum id, asperiores quidem iusto eaque ad. Commodi, rem soluta? Sequi soluta consectetur repudiandae suscipit similique sed laudantium aliquam fugiat, voluptatem ab dolores veritatis qui totam ratione earum, molestias non nobis. Accusamus expedita explicabo, eum sunt non atque quos aperiam quae eligendi, fugiat doloremque architecto repudiandae dolore fuga, voluptas natus! Omnis hic saepe voluptas error? Aliquam nulla expedita cupiditate, voluptas adipisci eius repellendus reprehenderit deserunt ducimus veritatis quos, laborum earum tempore eveniet error libero magni! Aliquam labore eveniet doloremque accusantium enim harum quam aut praesentium quod itaque est nisi consectetur earum, explicabo accusamus voluptates cumque voluptatum modi unde quibusdam veniam dolores, reprehenderit expedita. Natus fugiat voluptatibus distinctio officia in? Eius dolor facere aut qui repellat aperiam obcaecati perspiciatis corporis nisi explicabo atque rerum animi vel tempore, impedit dolorum modi molestias consectetur odit eveniet. Facilis repellat necessitatibus laborum sed architecto inventore molestiae corrupti ducimus quod? Adipisci, ab facere. Illum, unde incidunt consequuntur aliquid excepturi ipsa asperiores accusamus cupiditate quidem, similique saepe. Necessitatibus, magni. Odio veniam error officiis sint esse, architecto pariatur culpa aut. Laboriosam autem vel nulla minima molestias corrupti perferendis fuga iure eligendi voluptate praesentium, magni, fugit quod. Ab consectetur corrupti asperiores, totam porro deleniti iure omnis aliquid, voluptates quisquam qui rem eligendi molestias dicta architecto veritatis possimus ipsam, enim vero nesciunt aut inventore eaque tempora. Velit cumque optio eveniet quidem quasi, possimus nam dignissimos magnam sint laudantium saepe veniam! Suscipit rem delectus, hic tempore id eaque cupiditate tempora earum assumenda dolores, corrupti odit maiores vitae eveniet sequi voluptates obcaecati! Soluta accusamus tenetur minus aliquam reprehenderit quas delectus, modi unde quibusdam, repellat blanditiis consequatur est, provident quia itaque? Nisi, iusto placeat distinctio laudantium fuga enim!</p> */}
-        {/* <Main /> */}
-        {/* <BrowserRouter>
-          <Switch>
-            <Route path="/menu" />
-            <Route path="/delivery" />
-          </Switch>
-        </BrowserRouter> */}
+      <div className="container" >
+        <div className="app">
+          <Header />
+         <div className="app-main-section"> 
+           {/* <Menu /> */}
+          <BrowserRouter>
+            <Switch>
+              <Route path="/home" component={Home} />
+              <Route path="/menu" component={Menu} />
+              <Route path="/delivery" component={Delivery} />
+              <Route path="/response" component={Response} />
+              <Route path="/logIn" component={LogIn} />
+            </Switch>
+          </BrowserRouter>
+          </div>
+        </div>
         <Footer />
       </div>
     );
   }
 }
+
+export default withFoodService()(App);
