@@ -13,6 +13,7 @@ import LogIn from './component/pages/logIn';
 interface IAppProps {
   foodService?:any;
 }
+
 class App extends Component<IAppProps> {
 
   render() {
