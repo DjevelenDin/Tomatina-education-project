@@ -1,8 +1,8 @@
-  import React from 'react'
+import React from 'react'
 
 const {
-   Provider: FoodServiceProvider,
-   Consumer: FoodServiceConsumer,
+  Provider: FoodServiceProvider,
+  Consumer: FoodServiceConsumer,
 } = React.createContext({});
 
-export {FoodServiceProvider, FoodServiceConsumer}
+export { FoodServiceProvider, FoodServiceConsumer }
