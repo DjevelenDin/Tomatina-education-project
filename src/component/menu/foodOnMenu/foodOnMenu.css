@@ -1,0 +1,37 @@
+.container-food{
+    width: 24%;
+}
+#img-food{
+    width: 100%;
+}
+.text-box-about-food{
+    display: flex;
+    align-content:space-between;
+    padding-bottom: 10px;
+}
+.text-name-food{
+    font-size: 19px;
+    font-weight: 600;
+color: #2d2c2c;
+width: 80%;
+}
+.price-food{
+    font-size: 19px;
+    font-weight: 600;
+    width: 20%;
+color: #2d2c2c;
+margin-left: 30px;
+}
+.box-button{
+    display: flex;
+    justify-content: space-between;
+}
+.box-green-buttons{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-about-food{
+    font-size: 15px;
+    font-weight: 200;
+}

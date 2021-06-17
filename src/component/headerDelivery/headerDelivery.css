@@ -5,6 +5,7 @@
 	background: #F5F5F5;
 	letter-spacing: 0.05rem;
 	position: fixed;
+	z-index: 99;
 	width: 100%;
 }
 .app-header-delivery p{
