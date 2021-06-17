@@ -1,0 +1,72 @@
+.app-header-logo{
+	margin: 0px 0px 0px 90px;
+}
+.app-header-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	width: 100%;
+	position: fixed;
+	top: 50px;
+	background: rgb(255, 255, 255);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.41); 
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.41);
+}
+.app-header-content ul{
+	display: flex;
+}
+.app-header-content ul li{
+	margin: 0px 30px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.app-header-content-response{
+	padding: 20px 40px;
+	background: #F5F5F5;
+	color: #599921;
+	font-size: 16px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+}
+.app-header-content-response:hover{
+background: #599921;
+color: #fff;
+}
+.app-header-block-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icons-heart{
+	position: relative;
+	margin: 20px;
+}
+.fa-heart{
+	position: absolute;
+	top: 15px;
+	right: 13px;
+}
+.fa-mobile-alt{
+	position: absolute;
+	top: 13px;
+	right: 17px;
+}
+.fa-bars{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.bg{
+	fill:#599921;
+}
+.fa-user{
+	color: #599921;
+	margin: 0 10px;
+}
+.app-header-content-logIn{
+	text-transform: uppercase;
+	cursor: pointer;
+}
