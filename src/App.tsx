@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route, } from 'react-router-dom';
+
 import {withFoodService} from './component/hoc-helpers'
 import Header from './component/header/header';
 import Home from './component/pages/home';
@@ -9,10 +10,12 @@ import Menu from './component/pages/menu';
 import Response from './component/pages/response';
 import Delivery from './component/pages/delivery';
 import LogIn from './component/pages/logIn';
+import DeliveryArea from "./components/deliveryArea/deliveryArea"
 
 interface IAppProps {
   foodService?:any;
 }
+
 class App extends Component<IAppProps> {
 
   render() {
@@ -28,7 +31,7 @@ class App extends Component<IAppProps> {
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/menu" component={Menu} />
-              <Route path="/delivery" component={Delivery} />
+              <Route path="/delivery" component={DeliveryArea} />
               <Route path="/response" component={Response} />
               <Route path="/logIn" component={LogIn} />
             </Switch>
