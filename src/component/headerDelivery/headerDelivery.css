@@ -1,0 +1,25 @@
+.app-header-delivery{
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background: #F5F5F5;
+	letter-spacing: 0.05rem;
+	position: fixed;
+	width: 100%;
+}
+.app-header-delivery p{
+	font-weight: normal;
+}
+.app-header-delivery span{
+	margin: 0 40px 0px 10px;
+	font-weight: 300;
+}
+.app-header-delivery li{
+	color: #518B26;
+	border-bottom: 3px solid #518B26;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 0px 0px 3px 0px;
+	font-weight: bold;
+}
