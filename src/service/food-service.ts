@@ -12,6 +12,6 @@ export default class FoodService {
 
     getProductsList = async () => {
         const res = await this.getResource('/products');
-        console.log(res);
+        return res;
     }
 }
