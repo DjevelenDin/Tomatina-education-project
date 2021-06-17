@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './headerContent.css';
+import showCommentWindow from '../comment/leaveComment';
 
 export default class HeaderContent extends Component {
   render() {
