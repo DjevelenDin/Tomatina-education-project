@@ -1,17 +1,13 @@
-#element::-webkit-scrollbar {
-	width: 6px;
-	background-color: #b9caad;
-  }
-  
-  #element::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: #529921;
-  }
-  
-  #element::-webkit-scrollbar-track {
-	border-radius: 10px;
-	background-color: #ffffff;
-  }
-#element{
-    overflow-x: hidden;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
