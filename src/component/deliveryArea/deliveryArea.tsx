@@ -6,8 +6,8 @@ import GreenBike from "./../../images/bike_green.svg";
 import YellowBike from "./../../images/bike_yellow.svg";
 import RedBike from "./../../images/bike_red.svg";
 
-import Map from "../../components/deliveryArea/map/map";
-import Payment from "../../components/deliveryArea/payment/payment";
+import Map from "../../component/map/map";
+import Payment from "../../component/payment/payment";
 
 export default class deliveryArea extends React.Component {
   render() {
