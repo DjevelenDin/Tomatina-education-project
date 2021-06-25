@@ -10,7 +10,7 @@ export default class HeaderContent extends Component {
         </div>
         <div>
           <ul>
-            <a href="#"><li>Меню</li></a>
+            <a href="menu"><li>Меню</li></a>
             <a href="#"><li>Доставка</li></a>
           </ul>
         </div>

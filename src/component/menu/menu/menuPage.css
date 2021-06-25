@@ -25,6 +25,18 @@
   width: 95%;
   margin: 0px auto;
 }
-/* .checkbox-filter-all-or-new {
-  bo
-} */
+.food-box-in-menu{
+  margin-top: 15px;
+}
+.checkbox-filter{
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.checkbox-filter-all-or-new {
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+}
