@@ -8,9 +8,10 @@ import Home from './component/pages/home';
 import Footer from './component/footer/footer';
 import Menu from './component/pages/menu';
 import Response from './component/pages/response';
-import Delivery from './component/pages/delivery';
-import LogIn from './component/pages/logIn';
-import DeliveryArea from "./components/deliveryArea/deliveryArea"
+// import Delivery from './component/pages/delivery';
+import LogIn from './component/login/loginForm/loginForm';
+import DeliveryArea from "./component/deliveryArea/deliveryArea"
+import myAccount from './component/myAccount/myAccount';
 
 interface IAppProps {
   foodService?:any;
@@ -29,6 +30,7 @@ class App extends Component<IAppProps> {
            {/* <Menu /> */}
           <BrowserRouter>
             <Switch>
+            <Route path="/myAccount" component={myAccount} />
               <Route path="/home" component={Home} />
               <Route path="/menu" component={Menu} />
               <Route path="/delivery" component={DeliveryArea} />

@@ -2,9 +2,9 @@ import React from "react";
 
 import "./delivery.css";
 
-import GreenBike from "./../../images/bike_green.svg";
-import YellowBike from "./../../images/bike_yellow.svg";
-import RedBike from "./../../images/bike_red.svg";
+import GreenBike from "../../../src/images/bike_green.svg";  
+import YellowBike from "../../../src/images/bike_yellow.svg";
+import RedBike from "../../../src/images/bike_red.svg";
 
 import Map from "../../component/map/map";
 import Payment from "../../component/payment/payment";

@@ -1,0 +1,123 @@
+.authorization-block{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+}
+.passwordErrorFirst{
+    margin-left: -2px;
+}
+.passwordError{
+    margin-left: 70px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 600px;
+
+}
+.UserName{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.forName, .forSurname, .forPassword, .forConfirmPassword{
+    flex-direction: column;
+}
+
+
+
+.lastName{
+    margin-left: 70px;
+}
+
+.errorForLastName{
+    margin-left: 70px;
+}
+
+.UserName input{
+    width: 230px;
+    height: 40px;
+}
+
+
+.phoneAndMail{
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.phoneAndMail input{
+    width: 530px;
+    height: 40px;
+
+}
+.email{
+    margin-top: 20px
+}
+
+.forPassword{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.forPassword input{
+    width: 230px;
+    height: 40px;
+
+}
+
+.forConfirmPassword{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.forConfirmPassword input{
+    width: 230px;
+height: 40px;
+
+}
+.password-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.checkPassword{
+    margin-left: 70px;
+   
+}
+input{
+    margin-bottom: 10px;    
+}
+.loginBtn{
+    background-color: #599921;
+    color: white;
+    border: 1px solid #599921;
+    border-radius: 6px;
+    padding: 18px 30px;
+    width: 400px;
+    font-size: 20px;
+}
+.login-form p{
+color: rgb(117, 117, 117);
+}
+.haveAccount{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 250px;
+}
+.signIn{
+    border: none;
+    background-color: initial;
+    color: rgb(117, 117, 117);
+}

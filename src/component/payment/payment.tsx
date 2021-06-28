@@ -1,9 +1,9 @@
 import React from "react";
 import "./payment.css";
 
-import ligPay from "./../../../images/pay_page_one.svg";
-import card from "./../../../images/pay_page_two.svg";
-import cash from "./../../../images/pay_page_tree-1.svg";
+import ligPay from "./../../../src/images/pay_page_one.svg";
+import card from "./../../../src/images/pay_page_two.svg";
+import cash from "./../../../src/images/pay_page_tree-1.svg";
 
 export default class Payment extends React.Component {
   render() {
