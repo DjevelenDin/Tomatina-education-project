@@ -6,10 +6,15 @@
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@types/history": "^4.7.9",
     "@types/jest": "^26.0.23",
-    "@types/node": "^12.20.15",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.7",
+<<<<<<< HEAD
+    "bootstrap-icons": "^1.5.0",
+    "form-data": "^3.0.1",
+=======
+>>>>>>> d3efe3f17298b3dc1e6a87f3ec0a02a917fab5bf
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
@@ -41,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.8"
+=======
+>>>>>>> d3efe3f17298b3dc1e6a87f3ec0a02a917fab5bf
   }
 }
