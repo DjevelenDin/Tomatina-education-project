@@ -1,6 +1,75 @@
-import React from "react"
+// import React from "react"
 
-const Soups = () =>{
-    return <h1>Soups</h1>
+// const Soups = () =>{
+//     return <h1>Soups</h1>
+// }
+// export default Soups
+import React, { useCallback } from "react";
+import ButtonNew from "../menu/buttonNew/buttonNew";
+import "../menu/foodOnMenu/foodOnMenu.css";
+import IconLove from "../menu/iconLove/iconLove";
+import ButtonFastOrder from "../menu/buttonFastOrder/buttonFastOrder";
+import ButtonAddIngredients from "../menu/buttonAddIngredients/buttonAddIngredients";
+
+interface FoodProps {
+  id: number;
+  name: string;
+  categories: string;
+  new: boolean;
+  price: number;
+  image: string;
+  title: string;
 }
-export default Soups
+
+const Soups = () => {
+  const [food, setFood] = React.useState([]);
+
+  const getDate = useCallback(async () => {
+    let url = "http://localhost:3012/products";
+    let response = await fetch(url);
+    let food = await response.json();
+    setFood(food);
+  }, []);
+
+  React.useEffect(() => {
+    getDate();
+  }, []);
+
+  const NewArrayCopyFoodSoups: Array<FoodProps> = [];
+  {
+    food.filter((item: FoodProps) => {
+      if (item.categories === "soup") NewArrayCopyFoodSoups.push(item);
+    });
+  }
+
+  return (
+    <div className="big-container-food food-box-in-menu menu-big-conteiner">
+      {NewArrayCopyFoodSoups.map((plate: FoodProps) => {
+        return (
+          <div className="container-food">
+            <div>
+              <div className="box-button">
+                <ButtonNew />
+                <IconLove />{" "}
+              </div>
+              <img src={plate.image} id="img-food"></img>
+            </div>
+            <div className="box-green-buttons">
+              <ButtonFastOrder />
+              <ButtonAddIngredients />
+            </div>
+            <div className="text-box-about-food">
+              <p className="text-name-food">{plate.name}</p>
+              <p className="price-food">{plate.price}</p>{" "}
+            </div>{" "}
+            <div>
+              <p className="text-about-food">{plate.title}</p>{" "}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Soups;

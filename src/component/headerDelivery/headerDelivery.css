@@ -7,6 +7,7 @@
 	position: fixed;
 	z-index: 99;
 	width: 100%;
+	margin: 0;
 }
 .app-header-delivery p{
 	font-weight: normal;

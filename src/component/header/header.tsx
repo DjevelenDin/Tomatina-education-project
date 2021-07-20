@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './header.css'
 import HeaderContent from './../headerContent/headerContent';
 import HeaderDelivery from './../headerDelivery/headerDelivery';
 
-export default class Header extends Component {
-  render() {
+const Header = ()=> {
     return (
       <header>
         <HeaderDelivery />
         <HeaderContent />
       </header>
     )
-  }
 }
+
+export default Header

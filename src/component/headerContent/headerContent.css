@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 30px;
+	/* padding: 10px 30px; */
 	width: 100%;
 	position: fixed;
 	z-index: 100;
@@ -49,6 +49,7 @@ color: #fff;
 	position: absolute;
 	top: 15px;
 	right: 13px;
+	color: red;
 }
 .fa-mobile-alt{
 	position: absolute;

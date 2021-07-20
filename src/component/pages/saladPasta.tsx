@@ -15,7 +15,7 @@ interface FoodProps {
   title: string;
 }
 
-const Dessert = () => {
+const SaladPasta = () => {
   const [food, setFood] = React.useState([]);
 
   const getDate = useCallback(async () => {
@@ -29,16 +29,17 @@ const Dessert = () => {
     getDate();
   }, []);
 
-  const NewArrayCopyFoodDessert: Array<FoodProps> = [];
+  const NewArrayCopyFoodSaladPasta: Array<FoodProps> = [];
   {
     food.filter((item: FoodProps) => {
-      if (item.categories === "dessert") NewArrayCopyFoodDessert.push(item);
+      if (item.categories === "salatPasta")
+        NewArrayCopyFoodSaladPasta.push(item);
     });
   }
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
-      {NewArrayCopyFoodDessert.map((plate: FoodProps) => {
+      {NewArrayCopyFoodSaladPasta.map((plate: FoodProps) => {
         return (
           <div className="container-food">
             <div>
@@ -66,4 +67,4 @@ const Dessert = () => {
   );
 };
 
-export default Dessert;
+export default SaladPasta;

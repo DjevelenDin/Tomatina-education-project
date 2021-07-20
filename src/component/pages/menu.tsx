@@ -1,10 +1,15 @@
-import React, {Component} from 'react'
-import MenuPage from '../menu/menu/menuPage'
+import React from "react";
+import MenuPage from "../menu/menu/menuPage";
+// import { Switch, Route, useRouteMatch } from "react-router-dom";
+// import Dessert from "../pages/dessert";
+// import Breakfast from "../pages/breakfast";
 
-export default class Menu extends Component{
-    render(){
-        return(
-            <div><MenuPage></MenuPage></div>
-        )
-    }
-}
+export const Menu = () => {
+  // let { path, url } = useRouteMatch();
+  // console.log(path)
+  return (
+    <div>
+      <MenuPage></MenuPage>
+    </div>
+  );
+};
