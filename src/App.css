@@ -1,18 +1,7 @@
-@font-face {
-	font-family: Geometria-Bold;
-	src: url(./fonts/Geometria-Bold.ttf);
-}
-@font-face {
-	font-family: Geometria-Heavy;
-	src: url(./fonts/Geometria-Heavy.ttf);
-}
-@font-face {
-	font-family: Geometria-Medium;
-	src: url(./fonts/Geometria-Medium.ttf);
-}
 *{
     text-align: center;
     font-weight: normal;
+<<<<<<< HEAD
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -67,3 +56,6 @@ i{
 .app-main-section{
 	flex: 1 0 auto;
 }
+=======
+}
+>>>>>>> d3efe3f17298b3dc1e6a87f3ec0a02a917fab5bf

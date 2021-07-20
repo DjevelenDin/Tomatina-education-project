@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #element::-webkit-scrollbar {
 	width: 6px;
 	background-color: #b9caad;
@@ -14,4 +15,17 @@
   }
 #element{
     overflow-x: hidden;
+=======
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+>>>>>>> d3efe3f17298b3dc1e6a87f3ec0a02a917fab5bf
