@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./delivery.css";
+import "./deliveryArea.css";
 
-import GreenBike from "../../../src/images/bike_green.svg";  
+import GreenBike from "../../../src/images/bike_green.svg"; 
 import YellowBike from "../../../src/images/bike_yellow.svg";
 import RedBike from "../../../src/images/bike_red.svg";
 
@@ -11,18 +11,6 @@ import Payment from "../../component/payment/payment";
 
 export default class deliveryArea extends React.Component {
   render() {
-    const colorTextGreen = {
-      color: "#599921",
-      fontWeight: "bold" as "bold",
-    };
-    const colorTextYellow = {
-      color: "#ffcc00",
-      fontWeight: "bold" as "bold",
-    };
-    const colorTextRed = {
-      color: "#ef2f3d",
-      fontWeight: "bold" as "bold",
-    };
     return (
       <>
         <div className="title">
@@ -42,23 +30,24 @@ export default class deliveryArea extends React.Component {
                 <div className="first-description">
                   <div className="greenTitle">
                     {" "}
-                    <span style={colorTextGreen}>Зелена зона</span>{" "}
+                    <span className="colorTextGreen">Зелена зона</span>{" "}
                   </div>
-                   <div className="list">
+                  <div className="list">
                     <ul className="greenList">
                       <li>
                         Орієнтовний час доставки{" "}
-                        <span style={colorTextGreen}>39 хвилин</span>{" "}
+                        <span className="colorTextGreen">39 хвилин</span>{" "}
                       </li>
                       <li>
                         При замовленні від{" "}
-                        <span style={colorTextGreen}>250 грн</span> привеземо{" "}
-                        <span style={colorTextGreen}>БЕЗКОШТОВНО</span>{" "}
+                        <span className="colorTextGreen">250 грн</span>{" "}
+                        привеземо{" "}
+                        <span className="colorTextGreen">БЕЗКОШТОВНО</span>{" "}
                       </li>
                       <li>
                         При замовленні до{" "}
-                        <span style={colorTextGreen}>250 грн</span> вартість
-                        доставки <span style={colorTextGreen}>60 грн</span>{" "}
+                        <span className="colorTextGreen">250 грн</span> вартість
+                        доставки <span className="colorTextGreen">60 грн</span>{" "}
                       </li>
                     </ul>
                   </div>
@@ -75,17 +64,19 @@ export default class deliveryArea extends React.Component {
                     <ul className="yellowList">
                       <li>
                         Орієнтовний час доставки{" "}
-                        <span style={colorTextYellow}>55 хвилин</span>{" "}
+                        <span className="colorTextYellow">55 хвилин</span>{" "}
                       </li>
                       <li>
                         При замовленні від{" "}
-                        <span style={colorTextYellow}>250 грн</span> привеземо{" "}
-                        <span style={colorTextYellow}>БЕЗКОШТОВНО</span>{" "}
+                        <span className="colorTextYellow">250 грн</span>{" "}
+                        привеземо{" "}
+                        <span className="colorTextYellow">БЕЗКОШТОВНО</span>{" "}
                       </li>
                       <li>
                         При замовленні до{" "}
-                        <span style={colorTextYellow}>250 грн</span> вартість
-                        доставки <span style={colorTextYellow}>60 грн</span>{" "}
+                        <span className="colorTextYellow">250 грн</span>{" "}
+                        вартість доставки{" "}
+                        <span className="colorTextYellow">60 грн</span>{" "}
                       </li>
                     </ul>
                   </div>
@@ -98,23 +89,23 @@ export default class deliveryArea extends React.Component {
                 </div>
                 <div className="third-description">
                   <div className="redTitle">
-                    <span style={colorTextRed}>Червона зона</span>{" "}
+                    <span className="colorTextRed">Червона зона</span>{" "}
                   </div>
                   <div className="list">
                     <ul className="redList">
                       <li>
                         Орієнтовний час доставки до{" "}
-                        <span style={colorTextRed}>65 хвилин</span>{" "}
+                        <span className="colorTextRed">65 хвилин</span>{" "}
                       </li>
                       <li>
                         Мінімальне замовлення{" "}
-                        <span style={colorTextRed}>350 грн</span> вартість
-                        доставки <span style={colorTextRed}>90 грн</span>{" "}
+                        <span className="colorTextRed">350 грн</span> вартість
+                        доставки <span className="colorTextRed">90 грн</span>{" "}
                       </li>
                       <li>
                         При замовленні від{" "}
-                        <span style={colorTextRed}>500 грн</span> привеземо{" "}
-                        <span style={colorTextRed}>БЕЗКОШТОВНО</span>{" "}
+                        <span className="colorTextRed">500 грн</span> привеземо{" "}
+                        <span className="colorTextRed">БЕЗКОШТОВНО</span>{" "}
                       </li>
                     </ul>
                   </div>

@@ -6,9 +6,11 @@ import { withFoodService } from "./component/hoc-helpers";
 import Header from "./component/header/header";
 import Home from "./component/pages/home";
 import Footer from "./component/footer/footer";
+// import Delivery from './component/pages/delivery';
+import myAccount from "./component/myAccount/myAccount";
 import { Menu } from "./component/pages/menu";
 import Response from "./component/pages/response";
-import Delivery from "./component/pages/delivery";
+// import Delivery from "./component/pages/delivery";
 import LogIn from "./component/pages/logIn";
 import DeliveryArea from "./component/deliveryArea/deliveryArea";
 import Breakfast from "./component/pages/breakfast";
@@ -18,7 +20,7 @@ import FitSandwich from "./component/pages/fitSandwich";
 import Salad from "./component/pages/salad";
 import SaladPasta from "./component/pages/saladPasta";
 import Soups from "./component/pages/soups";
-import history from 'history'
+
 
 interface IAppProps {
   foodService?: any;
@@ -26,8 +28,9 @@ interface IAppProps {
 
 class App extends Component<IAppProps> {
   render() {
-    const { foodService } = this.props;
-    foodService.getProductsList();
+    // const { foodService } = this.props;
+    // console.log(foodService)
+    // foodService?.getProductsList();
     return (
       <div className="container">
         <BrowserRouter>

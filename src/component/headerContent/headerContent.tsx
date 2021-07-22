@@ -2,12 +2,13 @@ import React from "react";
 import "./headerContent.css";
 import { Link } from "react-router-dom";
 
+
 const HeaderContent = () => {
   return (
     <div className="app-header-content">
       <div>
         <Link className="app-header-logo" target="_blank" to="#">
-          <img src="https://www.tomatina.ua/wp-content/uploads/2020/10/logo_one-1.svg" />
+          <img src="https://www.tomatina.ua/wp-content/uploads/2020/10/logo_one-1.svg" alt="photo" />
         </Link>
       </div>
       <div>

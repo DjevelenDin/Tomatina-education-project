@@ -1,0 +1,7 @@
+.main{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    position: absolute;
+}

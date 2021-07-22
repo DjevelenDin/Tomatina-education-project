@@ -1,0 +1,31 @@
+h1{
+    margin-bottom: 20px;
+}
+.authorization-block{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.pass, .email{
+    margin-bottom: 30px;    
+    width: 400px;
+    height: 40px;
+}
+.forPasswordAccount{
+    flex-direction: column;
+    display: flex;
+}
+.forPasswordAccount input{
+    margin-bottom: 30px;    
+    width: 400px;
+    height: 40px;
+}
+.error2{
+    color: rgb(117, 117, 117);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.error{
+    margin-bottom: 20px;
+
+}
