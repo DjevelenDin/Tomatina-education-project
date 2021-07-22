@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: Geometria-Bold;
 	src: url(./fonts/Geometria-Bold.ttf);
@@ -11,6 +12,14 @@
 	src: url(./fonts/Geometria-Medium.ttf);
 }
 
+*{
+    text-align: center;
+    font-weight: normal;
+
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -61,3 +70,4 @@ i{
 .app-main-section{
 	flex: 1 0 auto;
 }
+

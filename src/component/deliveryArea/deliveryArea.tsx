@@ -2,7 +2,7 @@ import React from "react";
 
 import "./deliveryArea.css";
 
-import GreenBike from "../../../src/images/bike_green.svg";
+import GreenBike from "../../../src/images/bike_green.svg"; 
 import YellowBike from "../../../src/images/bike_yellow.svg";
 import RedBike from "../../../src/images/bike_red.svg";
 
