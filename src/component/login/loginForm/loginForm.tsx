@@ -12,7 +12,8 @@ export default class LogIn extends React.Component {
 
 
     const phoneRegExp =
-      /^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$/;
+      /^\+?3?8?(0\d{9})$/;
+
     const validationSchema = yup.object().shape({
       name: yup
         .string()

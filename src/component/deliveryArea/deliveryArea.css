@@ -97,3 +97,18 @@ ul{
   .map-container{
     margin-left: 50px;
   }
+
+  .colorTextGreen{
+    color: #599921;
+   font-weight: bold;
+  }
+
+  .colorTextYellow{
+    color: #ffcc00;
+    font-weight: bold;
+  }
+
+ .colorTextRed{
+    color: #ef2f3d;
+    font-weight: bold;
+  };
