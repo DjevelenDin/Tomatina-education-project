@@ -2,14 +2,28 @@ import React from "react";
 import "./headerContent.css";
 import { Link } from "react-router-dom";
 
+
+import TemporaryDrawer from "../sidebar/sidebar";
+
+
+
+
+
 const HeaderContent = () => {
   return (
     <div className="app-header-content">
       <div>
+
+        <Link className="app-header-logo" to="/mainPage"> 
+          <img
+            src="https://www.tomatina.ua/wp-content/uploads/2020/10/logo_one-1.svg"
+            alt="LogoPhoto"
+
         <Link className="app-header-logo" target="_blank" to="#">
           <img
             src="https://www.tomatina.ua/wp-content/uploads/2020/10/logo_one-1.svg"
             alt="photo"
+
           />
         </Link>
       </div>
@@ -18,6 +32,7 @@ const HeaderContent = () => {
           <Link to="/menu">
             <li>Меню</li>
           </Link>
+
           <Link to="/delivery">
             <li>Доставка</li>
           </Link>
@@ -95,7 +110,20 @@ const HeaderContent = () => {
           </span>
           {/* <i className="far fa-user"></i> */}
         </Link>
+
         <Link className="icons-heart" to="#">
+
+
+        <TemporaryDrawer/>
+
+          {/* <Link to="/sidebar">
+            <li>
+            <TemporaryDrawer/>
+            </li>
+          </Link> */}
+
+
+
           <svg
             className="bg"
             width="47"
@@ -124,7 +152,9 @@ const HeaderContent = () => {
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
+
         </Link>
+
       </div>
     </div>
   );
