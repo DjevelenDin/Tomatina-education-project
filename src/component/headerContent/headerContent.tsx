@@ -64,7 +64,7 @@ const HeaderContent = () => {
           </svg>
           <i className="fas fa-mobile-alt"></i>{" "}
         </Link>
-        <Link className="app-header-content-logIn" to="#">
+        <Link className="app-header-content-logIn"to="/logIn">
           <i className="far fa-user"></i> вхід
         </Link>
 
