@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import TemporaryDrawer from "../sidebar/sidebar";
 
-
-
 const HeaderContent = () => {
   return (
     <div className="app-header-content">
@@ -13,8 +11,7 @@ const HeaderContent = () => {
         <Link className="app-header-logo" to="/mainPage"> 
           <img
             src="https://www.tomatina.ua/wp-content/uploads/2020/10/logo_one-1.svg"
-            alt="LogoPhoto"
-          />
+            alt="LogoPhoto"/>
         </Link>
       </div>
       <div>
@@ -45,7 +42,16 @@ const HeaderContent = () => {
               stroke="#518B26"
             ></path>{" "}
           </svg>
-          <i className="far fa-heart"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            className="bi bi-heart far fa-heart"
+            viewBox="0 0 16 16"
+          >
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
         </Link>
         <Link className="icons-heart" to="#">
           <svg
@@ -62,25 +68,54 @@ const HeaderContent = () => {
               stroke="#518B26"
             ></path>{" "}
           </svg>
-          <i className="fas fa-mobile-alt"></i>{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            className="bi bi-phone fas fa-mobile-alt"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg>
         </Link>
+
         <Link className="app-header-content-logIn"to="/logIn">
           <i className="far fa-user"></i> вхід
-        </Link>
 
+        <Link className="app-header-content-logIn" to="#">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              className="bi bi-person far fa-user"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+            </svg>
+            <p>вхід</p>
+          </span>
+
+        </Link>
         <Link className="icons-heart" to="#">
-
         <TemporaryDrawer/>
-
-          {/* <Link to="/sidebar">
-            <li>
-            <TemporaryDrawer/>
-            </li>
-          </Link> */}
-
-
-        </Link>
-
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            height="23"
+            fill="currentColor"
+            className="bi bi-list fas fa-bars"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+       </Link>
       </div>
     </div>
   );
