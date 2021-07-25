@@ -80,6 +80,10 @@ const HeaderContent = () => {
             <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
           </svg>
         </Link>
+
+        <Link className="app-header-content-logIn"to="/logIn">
+          <i className="far fa-user"></i> вхід
+
         <Link className="app-header-content-logIn" to="#">
           <span>
             <svg
@@ -94,6 +98,7 @@ const HeaderContent = () => {
             </svg>
             <p>вхід</p>
           </span>
+
         </Link>
         <Link className="icons-heart" to="#">
         <TemporaryDrawer/>

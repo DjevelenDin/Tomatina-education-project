@@ -2,17 +2,14 @@ import React from "react";
 import "./loginForm.css";
 import SignIn from "../../../component/signIn/signIn";
 import "../../signIn/signIn";
-import { BrowserRouter, Switch, Route, } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Formik } from "formik";
 import * as yup from "yup";
 
 export default class LogIn extends React.Component {
   render() {
-
-
-    const phoneRegExp =
-      /^\+?3?8?(0\d{9})$/;
+    const phoneRegExp = /^\+?3?8?(0\d{9})$/;
 
     const validationSchema = yup.object().shape({
       name: yup
@@ -176,16 +173,14 @@ export default class LogIn extends React.Component {
                     Зареєструватись
                   </button>
                 </div>
-              
               </form>
               <BrowserRouter>
-            <Switch>
-              <Route path="/signIn" component={SignIn} />
-            </Switch>
-          </BrowserRouter>
+                <Switch>
+                  <Route path="/signIn" component={SignIn} />
+                </Switch>
+              </BrowserRouter>
               <SignIn />
             </div>
-            
           )}
         </Formik>
       </>

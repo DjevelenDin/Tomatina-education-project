@@ -9,7 +9,8 @@ import Footer from "./component/footer/footer";
 import myAccount from "./component/myAccount/myAccount";
 import { Menu } from "./component/pages/menu";
 import Response from "./component/pages/response";
-import LogIn from "./component/pages/logIn";
+import LogIn from "./component/login/loginForm/loginForm";
+
 import DeliveryArea from "./component/deliveryArea/deliveryArea";
 import Breakfast from "./component/pages/breakfast";
 import Dessert from "./component/pages/dessert";
@@ -18,7 +19,8 @@ import FitSandwich from "./component/pages/fitSandwich";
 import Salad from "./component/pages/salad";
 import SaladPasta from "./component/pages/saladPasta";
 import Soups from "./component/pages/soups";
-
+import Basket from "./component/basket/basket"
+import BasketOrder from "./component/basket_oreder/basket_order"
 
 import TemporaryDrawer from "./component/sidebar/sidebar"
 import MainPage from "./component/mainPage/mainPage";
@@ -56,6 +58,8 @@ class App extends Component<IAppProps> {
                 <Route path="/logIn" component={LogIn} />
                 <Route path="/sidebar" component={TemporaryDrawer} />
                 <Route path="/mainPage" component={MainPage} />
+                <Route path="/basket" component={Basket} />
+                <Route path="/order" component={BasketOrder} />
               </Switch>
             </div>
           </div>
