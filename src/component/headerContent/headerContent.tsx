@@ -82,7 +82,6 @@ const HeaderContent = () => {
           </svg>
         </Link>
 
-  
         <Link className="app-header-content-logIn" to="/logIn">
           <span>
             <svg
@@ -97,8 +96,11 @@ const HeaderContent = () => {
             </svg>
             <p>вхід</p>
           </span>
+
           </Link>
-      
+
+        </Link>
+
         <Link className="icons-heart" to="#">
         <TemporaryDrawer/>
           <svg
