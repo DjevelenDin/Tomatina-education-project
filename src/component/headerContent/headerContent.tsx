@@ -99,7 +99,7 @@ const HeaderContent = () => {
 
           </Link>
 
-        </Link>
+
 
         <Link className="icons-heart" to="#">
         <TemporaryDrawer/>

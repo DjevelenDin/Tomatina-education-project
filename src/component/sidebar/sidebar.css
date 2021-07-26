@@ -1,0 +1,12 @@
+.nav_sidebar {
+    display: flex;
+ 
+    flex-direction: column;
+padding: 30px;
+}
+
+.btn_nav_sidebar{
+margin-top: 30px;
+color: #599921;
+
+}
