@@ -10,7 +10,10 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import InfoIcon from '@material-ui/icons/Info';
+import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 
+import './sidebar.css'
 
 
 
@@ -54,12 +57,28 @@ export default function TemporaryDrawer() {
 
       <Divider />
       <List>
-        {['Про Томатіну', 'Доставка', 'Вакансії', 'Контакти'].map((text, index) => (
+        {/* {['Про Томатіну', 'Доставка', 'Вакансії', 'Контакти'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{index % 2 === 0 ? <InfoIcon /> : <ImportContactsIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
-        ))}
+        ))} */}
+
+<div className="nav_sidebar">
+          <Link className='btn_nav_sidebar' to="/mainPage">
+            <li>Про Томатіну</li>
+          </Link>
+          <Link className='btn_nav_sidebar' to="/delivery">
+            <li>Доставка</li>
+          </Link>
+          <Link className='btn_nav_sidebar' to="#">
+            <li>Вакансії</li>
+          </Link>
+          <Link className='btn_nav_sidebar' to="#">
+            <li>Контакти</li>
+          </Link>
+
+          </div>
       </List>
     </div>
   );
@@ -72,7 +91,7 @@ export default function TemporaryDrawer() {
         <React.Fragment key={anchor}>
           <Button   onClick={toggleDrawer(anchor, true)} > 
           
-          <svg
+          <svg 
             className="bg"
             width="47"
             height="45"
