@@ -2,10 +2,18 @@ import React from "react";
 import "../buttonFastOrder/buttonFastOrder.css";
 import { Link } from "react-router-dom";
 
-const buttonFastOrder = () => {
+function buttonFastOrder({onAddProduct}){{
+  const onAddProduct = () => {
+    const obj = {
+      
+    };
+    // onClickAddProduct(obj);
+  };
+}
+
   return (
     <Link to="#">
-      <button className="app-header-content-response" id="buttonFastOrder">
+      <button onClick={onAddProduct} className="app-header-content-response" id="buttonFastOrder">
         ШВИДКЕ ЗАМОВЛЕННЯ
       </button>
     </Link>

@@ -20,10 +20,13 @@ import Salad from "./component/pages/salad";
 import SaladPasta from "./component/pages/saladPasta";
 import Soups from "./component/pages/soups";
 import Basket from "./component/basket/basket"
-import BasketOrder from "./component/basket_oreder/basket_order"
+// import BasketOrder from "./component/cart/basket_order"
 
 import TemporaryDrawer from "./component/sidebar/sidebar"
 import MainPage from "./component/mainPage/mainPage";
+import Cart from "./component/cart/cart";
+
+
 
 interface IAppProps {
   foodService?: any;
@@ -59,7 +62,7 @@ class App extends Component<IAppProps> {
                 <Route path="/sidebar" component={TemporaryDrawer} />
                 <Route path="/mainPage" component={MainPage} />
                 <Route path="/basket" component={Basket} />
-                <Route path="/order" component={BasketOrder} />
+                <Route path="/buy" component={Cart} />
               </Switch>
             </div>
           </div>

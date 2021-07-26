@@ -18,6 +18,7 @@ interface FoodProps {
 
 const FoodOnMenu = () => {
   const [food, setFood] = React.useState([]);
+
   const getDate = useCallback(async () => {
     let url = "http://localhost:3012/products";
     let response = await fetch(url);
@@ -25,6 +26,7 @@ const FoodOnMenu = () => {
     console.log(food);
     // setFood(food);
   }, []);
+  
   React.useEffect(() => {
     getDate();
   }, []);
@@ -39,7 +41,7 @@ const FoodOnMenu = () => {
                   <ButtonNew />
                   <IconLove />
                 </div>
-                <img src={item.image} id="img-food"></img>
+                <img src={item.image} id="img-food" alt=''></img>
                 {/* <img src={M} id="img-food"></img> */}
               </div>
               <div className="box-green-buttons">
