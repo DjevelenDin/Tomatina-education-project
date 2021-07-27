@@ -5,11 +5,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import ImportContactsIcon from '@material-ui/icons/ImportContacts';
-import InfoIcon from '@material-ui/icons/Info';
+
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 

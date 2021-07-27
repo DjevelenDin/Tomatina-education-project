@@ -19,17 +19,17 @@ import FitSandwich from "./component/pages/fitSandwich";
 import Salad from "./component/pages/salad";
 import SaladPasta from "./component/pages/saladPasta";
 import Soups from "./component/pages/soups";
-import Basket from "./component/basket/basket"
+import Basket from "./component/basket/basket";
+
 // import BasketOrder from "./component/cart/basket_order"
 
-import TemporaryDrawer from "./component/sidebar/sidebar"
+import TemporaryDrawer from "./component/sidebar/sidebar";
 import MainPage from "./component/mainPage/mainPage";
 import Cart from "./component/cart/cart";
 import Vacancies from "./component/vacancies/vacancies";
 import Oferta from "./component/oferta/oferta";
 import Contacts from "./component/contacts/contacts";
-
-
+import About from "./component/about/about";
 
 interface IAppProps {
   foodService?: any;
@@ -42,23 +42,21 @@ class App extends Component<IAppProps> {
     // foodService?.getProductsList();
     return (
       <div className="container">
-          
         <BrowserRouter>
           <div className="app">
             <Header />
-       
+
             <div className="app-main-section">
-         
               <Switch>
                 <Route path="/home" component={Home} />
                 <Route path="/menu" exact component={Menu} />
-                <Route path="/menu/breakfast" component={Breakfast}/>
-                <Route path="/menu/dessert" component={Dessert}/>
-                <Route path="/menu/drinks" component={Drinks}/>
-                <Route path="/menu/fitSandwich" component={FitSandwich}/>
-                <Route path="/menu/salad" component={Salad}/>
-                <Route path="/menu/saladPizza" component={SaladPasta}/>
-                <Route path="/menu/soups" component={Soups}/>
+                <Route path="/menu/breakfast" component={Breakfast} />
+                <Route path="/menu/dessert" component={Dessert} />
+                <Route path="/menu/drinks" component={Drinks} />
+                <Route path="/menu/fitSandwich" component={FitSandwich} />
+                <Route path="/menu/salad" component={Salad} />
+                <Route path="/menu/saladPizza" component={SaladPasta} />
+                <Route path="/menu/soups" component={Soups} />
                 <Route path="/delivery" component={DeliveryArea} />
                 <Route path="/response" component={Response} />
                 <Route path="/logIn" component={LogIn} />
@@ -66,14 +64,15 @@ class App extends Component<IAppProps> {
                 <Route path="/mainPage" component={MainPage} />
                 <Route path="/basket" component={Basket} />
                 <Route path="/buy" component={Cart} />
-                <Route path="/vacancies" component={Vacancies}/>
-                <Route path="/oferta" component={Oferta}/>
-                <Route path="/contacts" component={Contacts}/>
+                <Route path="/vacancies" component={Vacancies} />
+                <Route path="/oferta" component={Oferta} />
+                <Route path="/contacts" component={Contacts} />
+                <Route path="/about" component={About} />
+                <Route path="/myAccount" component={myAccount} />
               </Switch>
             </div>
           </div>
           <Footer />
-      
         </BrowserRouter>
       </div>
     );
