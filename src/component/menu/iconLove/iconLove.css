@@ -1,11 +1,12 @@
-#heart-like{
+.i-red{
     color:red;
     border: red;
 position: relative;
 z-index: 0;
 top: 8px;
 height: 20px;
+right: -120px;
 }
-#heart-like:hover{
+.i-red:hover{
     color: #599921;
 }
