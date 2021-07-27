@@ -1,5 +1,6 @@
 import React from "react";
 import "./mainPage.css";
+import { Link } from 'react-router-dom';
 
 export default class MainPage extends React.Component {
   render() {
@@ -11,7 +12,12 @@ export default class MainPage extends React.Component {
             будь-який куточок Львова та передмістя
           </h1>
 
-          <button className="about">Детальніше</button>
+          <button className="about">
+
+          <Link className='about' to="/about">
+            Детальніше
+          </Link>
+            </button>
         </div>
 
         <div className="forPhotoSalad">

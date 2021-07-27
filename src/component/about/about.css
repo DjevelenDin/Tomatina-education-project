@@ -1,0 +1,86 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+}
+.firstBlock{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.firstBlock h1{
+color: #599921;
+}
+.secondBlock h1{
+    color: #599921;
+}
+.textAbout{
+    width: 400px;   
+    line-height: 30px;
+    margin-right: 40px;
+}
+.secondBlock{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.photoAbout2{
+    margin-right: 40px;
+}
+
+.titleAbt{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(100, 100, 100);
+}
+
+.bi-bi-hand-thumbs-up, .bi-bi-stars, .bi-bi-truck, .bi-bi-emoji-heart-eyes{
+	position: relative;
+	bottom: 13px;
+	right: 30px;
+	color: rgb(255, 255, 255);
+
+}
+.titleForSecondBlock{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(100, 100, 100);
+}
+.containerAbout-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstBlockIcons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 90px;
+}
+
+.containerAbout-3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.thirdBlockIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fourBlockIcons{
+    margin-left: 40px;
+}
+.containerAbout-2 p{
+    width: 300px;
+}
+.containerAbout-3 p{
+    width: 330px;
+}
