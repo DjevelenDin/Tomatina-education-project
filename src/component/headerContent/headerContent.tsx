@@ -96,6 +96,7 @@ const HeaderContent = () => {
             </svg>
             <p>вхід</p>
           </span>
+          </Link>
 
          
 

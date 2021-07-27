@@ -8,10 +8,10 @@ export default class Footer extends Component {
       <footer>
         <div className="app-footer">
           <div className="app-footer-block">
-            <span>Вакансії</span>
+           <Link to="/vacancies"> <span> Вакансії</span></Link>
           </div>
           <div className="app-footer-block">
-            <span>Договір Оферта</span>
+           <Link to="/oferta"><span>Договір Оферта</span></Link> 
           </div>
           <div className="app-footer-block app-footer-block-map">
             <div>
@@ -44,10 +44,12 @@ export default class Footer extends Component {
               </Link>
             </div>
             <div className="app-footer-map">
-              <p>м.Львів</p>
+              <p>м. Львів</p>
               <p className="app-footer-map-span">
-                ТРЦ Victoria Gardens, Кульпарківська 226 А ТРЦ Spartak, Мазепи
-                1Б
+                ТРЦ Victoria Gardens, 
+                Кульпарківська 226А <br/> 
+                ТРЦ Spartak, Мазепи 1Б <br/>
+                ТРЦ Forum Lviv, Під Дубом 7Б
               </p>
               <p>с. Сокільники</p>
               <p className="app-footer-map-span">
@@ -56,6 +58,7 @@ export default class Footer extends Component {
             </div>
           </div>
           <div className="app-footer-block app-footer-block-column">
+            <div>
             <div className="app-footer-flex">
               <Link className="icons-heart icons-margin" to="#">
                 <svg
@@ -84,7 +87,7 @@ export default class Footer extends Component {
                   <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                 </svg>
               </Link>
-              <Link to="#">+38 (067) 792 90 90</Link>
+              <Link to="#"> <span className="text-l">+38 (067) 792 90 90</span></Link>
             </div>
             <div className="app-footer-flex">
               <Link className="icons-heart icons-margin" to="#">
@@ -115,7 +118,8 @@ export default class Footer extends Component {
                 </svg>
               </Link>
               <span>Пн - Нд з 08:30 до 22:00 </span>
-              <span></span>
+              
+              </div>
             </div>
           </div>
           <div className="app-footer-block app-footer-block-line">
