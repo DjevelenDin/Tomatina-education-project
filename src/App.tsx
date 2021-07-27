@@ -26,6 +26,8 @@ import TemporaryDrawer from "./component/sidebar/sidebar"
 import MainPage from "./component/mainPage/mainPage";
 import Cart from "./component/cart/cart";
 import Vacancies from "./component/vacancies/vacancies";
+import Oferta from "./component/oferta/oferta";
+import Contacts from "./component/contacts/contacts";
 
 
 
@@ -65,6 +67,8 @@ class App extends Component<IAppProps> {
                 <Route path="/basket" component={Basket} />
                 <Route path="/buy" component={Cart} />
                 <Route path="/vacancies" component={Vacancies}/>
+                <Route path="/oferta" component={Oferta}/>
+                <Route path="/contacts" component={Contacts}/>
               </Switch>
             </div>
           </div>

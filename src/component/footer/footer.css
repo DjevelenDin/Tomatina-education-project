@@ -28,6 +28,7 @@ footer {
 }
 .app-footer-map p {
   margin: 5px 10px;
+  text-align: left;
 }
 .fa-map-marker-alt {
   position: absolute;
@@ -38,6 +39,7 @@ footer {
 .app-footer-map-span {
   color: gray;
   margin: 5px 20px;
+  text-align: left;
 }
 .fa-clock {
   position: absolute;
@@ -59,4 +61,7 @@ footer {
 }
 .icons-margin {
   margin: 0px 20px;
+}
+.text-l{
+  text-align: left;
 }
