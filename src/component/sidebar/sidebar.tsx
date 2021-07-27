@@ -74,10 +74,12 @@ export default function TemporaryDrawer() {
           <Link className='btn_nav_sidebar' to="/vacancies">
             <li>Вакансії</li>
           </Link>
+          <Link className='btn_nav_sidebar' to="/oferta">
+            <li>Договір</li>
+          </Link>
           <Link className='btn_nav_sidebar' to="/contacts">
             <li>Контакти</li>
           </Link>
-
           </div>
       </List>
     </div>
