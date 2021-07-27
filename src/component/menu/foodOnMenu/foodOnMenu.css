@@ -55,6 +55,7 @@ margin-bottom: 20px;
     
 }
 .box-button{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }

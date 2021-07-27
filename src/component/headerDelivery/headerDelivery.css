@@ -1,13 +1,18 @@
+.app-header-delivery-color{
+	position: fixed;
+	background-color: #F5F5F5;
+	width: 100%;
+	z-index: 99;
+}
 .app-header-delivery{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 15px;
-	background: #F5F5F5;
 	letter-spacing: 0.05rem;
-	position: fixed;
-	z-index: 99;
-	width: 100%;
-	margin: 0;
+	/* position: fixed; */
+	width: 600px;
+	margin: 0 auto;
 }
 .app-header-delivery p{
 	font-weight: normal;
@@ -24,4 +29,6 @@
 	cursor: pointer;
 	padding: 0px 0px 3px 0px;
 	font-weight: bold;
+	margin: 0;
+	line-height: 15px;
 }

@@ -1,12 +1,15 @@
 import React  from "react";
 import "./headerDelivery.css";
+import {Link} from "react-router-dom"
 
 const HeaderDelivery = () => {
   return (
+    <div className="app-header-delivery-color">
     <div className="app-header-delivery">
       <p>Ваш тип доставки:</p>
       <span>Самовивіз</span>
-      <li>Натисніть тут щоб змінити</li>
+     <Link to="/delivery"><li>Натисніть тут щоб дізнатися</li></Link> 
+    </div>
     </div>
   );
 };
