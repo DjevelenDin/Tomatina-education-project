@@ -2,34 +2,34 @@ import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { withFoodService } from "./component/hoc-helpers";
-import Header from "./component/header/header";
-import Home from "./component/pages/home";
-import Footer from "./component/footer/footer";
-import myAccount from "./component/myAccount/myAccount";
-import { Menu } from "./component/pages/menu";
-import Response from "./component/pages/response";
+import { withFoodService } from "./component/Hoc-helpers";
+import Header from "./component/Header/header";
+import Home from "./component/Pages/home";
+import Footer from "./component/Footer/footer";
+import myAccount from "./component/MyAccount/myAccount";
+import { Menu } from "./component/Pages/menu";
+import Response from "./component/Pages/response";
 import LogIn from "./component/login/loginForm/loginForm";
 
-import DeliveryArea from "./component/deliveryArea/deliveryArea";
-import Breakfast from "./component/pages/breakfast";
-import Dessert from "./component/pages/dessert";
-import Drinks from "./component/pages/drinks";
-import FitSandwich from "./component/pages/fitSandwich";
-import Salad from "./component/pages/salad";
-import SaladPasta from "./component/pages/saladPasta";
-import Soups from "./component/pages/soups";
-import Basket from "./component/basket/basket";
+import DeliveryArea from "./component/DeliveryArea/deliveryArea";
+import Breakfast from "./component/Pages/breakfast";
+import Dessert from "./component/Pages/dessert";
+import Drinks from "./component/Pages/drinks";
+import FitSandwich from "./component/Pages/fitSandwich";
+import Salad from "./component/Pages/salad";
+import SaladPasta from "./component/Pages/saladPasta";
+import Soups from "./component/Pages/soups";
+import Basket from "./component/Basket/basket";
 
 // import BasketOrder from "./component/cart/basket_order"
 
-import TemporaryDrawer from "./component/sidebar/sidebar";
-import MainPage from "./component/mainPage/mainPage";
+import TemporaryDrawer from "./component/Sidebar/sidebar";
+import MainPage from "./component/MainPage/mainPage";
 import Cart from "./component/cart/cart";
-import Vacancies from "./component/vacancies/vacancies";
-import Oferta from "./component/oferta/oferta";
-import Contacts from "./component/contacts/contacts";
-import About from "./component/about/about";
+import Vacancies from "./component/Vacancies/vacancies";
+import Oferta from "./component/Oferta/oferta";
+import Contacts from "./component/Contacts/contacts";
+import About from "./component/About/about";
 
 interface IAppProps {
   foodService?: any;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./signIn.css";
-import myAccount from "../myAccount/myAccount";
+import myAccount from "../MyAccount/myAccount";
 import { Link } from 'react-router-dom';
 
 export default class SignIn extends React.Component {

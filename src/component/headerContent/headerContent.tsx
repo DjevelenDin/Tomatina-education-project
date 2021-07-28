@@ -2,7 +2,7 @@ import React from "react";
 import "./headerContent.css";
 import { Link } from "react-router-dom";
 
-import TemporaryDrawer from "../sidebar/sidebar";
+import TemporaryDrawer from "../Sidebar/sidebar";
 
 const HeaderContent = () => {
   return (

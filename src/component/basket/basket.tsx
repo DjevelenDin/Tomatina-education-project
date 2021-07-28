@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import "./basket.css"
 
 
-export default class Basket extends Component {
-    render() {
+const Basket = ()=>{
+
         
         return (
             <div className='basket'>
@@ -11,5 +11,6 @@ export default class Basket extends Component {
           
             </div>
         )
-    }
+
 }
+export default Basket;
