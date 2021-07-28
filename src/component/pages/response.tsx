@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 
-export default class Response extends Component{
-    render(){
+const Response = ()=>{
+ 
         return(
             <div >Response</div>
         )
-    }
-}
+        }
+
+export default Response

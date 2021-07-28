@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import HeaderImageBar from '../headerImageBar/headerImageBar';
+import HeaderImageBar from '../HeaderImageBar/headerImageBar';
 
-export default class Home extends Component{
-    render(){
+const Home = ()=>{
+
         return(
             <div>
                 <HeaderImageBar />
             </div>
         )
     }
-}
+    export default Home;

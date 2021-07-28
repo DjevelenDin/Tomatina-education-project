@@ -1,5 +1,5 @@
 import React from "react";
-import { FoodServiceConsumer } from "../food-service-context";
+import { FoodServiceConsumer } from "../Food-service-context";
 
 const withFoodService = () => (Wrapper: any) => {
    return (props: any) => {

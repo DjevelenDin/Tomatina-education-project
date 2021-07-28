@@ -5,15 +5,10 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { useEffect } from "react";
 
-export default class myAccount extends React.Component {
-  
-  render() {
 
-    // useEffect(()=>{
-    //     console.log('kyky');
-        
-    // })
 
+  const myAccount = ()=>{
+    
     const validationSchema = yup.object().shape({
       email: yup
         .string()
@@ -97,4 +92,5 @@ export default class myAccount extends React.Component {
       </>
     );
   }
-}
+
+export default myAccount

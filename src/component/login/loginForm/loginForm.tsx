@@ -1,14 +1,14 @@
 import React from "react";
 import "./loginForm.css";
-import SignIn from "../../../component/signIn/signIn";
-import "../../signIn/signIn";
+import SignIn from "../../SignIn/signIn";
+import "../../SignIn/signIn";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Formik } from "formik";
 import * as yup from "yup";
 
-export default class LogIn extends React.Component {
-  render() {
+const LogIn = ()=>{ 
+
     const phoneRegExp = /^\+?3?8?(0\d{9})$/;
 
     const validationSchema = yup.object().shape({
@@ -186,4 +186,4 @@ export default class LogIn extends React.Component {
       </>
     );
   }
-}
+export default LogIn;

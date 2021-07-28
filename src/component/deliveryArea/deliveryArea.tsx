@@ -6,11 +6,10 @@ import GreenBike from "../../../src/images/bike_green.svg";
 import YellowBike from "../../../src/images/bike_yellow.svg";
 import RedBike from "../../../src/images/bike_red.svg";
 
-import Map from "../../component/map/map";
-import Payment from "../../component/payment/payment";
+import Map from "../Map/map";
+import Payment from "../Payment/payment";
 
-export default class deliveryArea extends React.Component {
-  render() {
+const deliveryArea  = ()=>{ 
     return (
       <>
         <div className="title">
@@ -123,4 +122,5 @@ export default class deliveryArea extends React.Component {
       </>
     );
   }
-}
+
+  export default deliveryArea;

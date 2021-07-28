@@ -2,8 +2,9 @@ import React from "react";
 import "./mainPage.css";
 import { Link } from 'react-router-dom';
 
-export default class MainPage extends React.Component {
-  render() {
+
+  const MainPage = ()=>{
+
     return (
       <div className="mainPage">
         <div className="forTitle">
@@ -30,4 +31,5 @@ export default class MainPage extends React.Component {
       </div>
     );
   }
-}
+
+export default  MainPage
