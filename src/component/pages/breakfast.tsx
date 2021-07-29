@@ -1,9 +1,9 @@
-import React , {useCallback} from "react"
-import ButtonNew from "../menu/buttonNew/buttonNew";
-import "../menu/foodOnMenu/foodOnMenu.css";
-import IconLove from "../menu/iconLove/iconLove";
-import ButtonFastOrder from "../menu/buttonFastOrder/buttonFastOrder";
-import ButtonAddIngredients from "../menu/buttonAddIngredients/buttonAddIngredients";
+import React, { useCallback } from "react";
+import ButtonNew from "../Menu/ButtonNew/buttonNew";
+import "../Menu/FoodOnMenu/foodOnMenu.css";
+import IconLove from "../Menu/IconLove/iconLove";
+import ButtonFastOrder from "../Menu/ButtonFastOrder/buttonFastOrder";
+import ButtonAddIngredients from "../Menu/ButtonAddIngredients/buttonAddIngredients";
 
 interface FoodProps {
   id: number;
@@ -24,45 +24,46 @@ const Breakfast = () => {
     let food = await response.json();
     setFood(food);
   }, []);
-  
+
   React.useEffect(() => {
     getDate();
   }, []);
-    
-  const NewArrayCopyFoodBreakfast:Array<FoodProps> = []
-  {food.filter((item:FoodProps)=>{
-    if(item.categories==="breakfast")
-    NewArrayCopyFoodBreakfast.push(item)
-  })}
+
+  const NewArrayCopyFoodBreakfast: Array<FoodProps> = [];
+  {
+    food.filter((item: FoodProps) => {
+      if (item.categories === "breakfast") NewArrayCopyFoodBreakfast.push(item);
+    });
+  }
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
-     {NewArrayCopyFoodBreakfast.map((plate:FoodProps)=>{return (
-            <div className="container-food">
-              <div>
-                <div className="box-button">
-                  <ButtonNew />
-                  <IconLove />{" "}
-                </div>
-                <img src={plate.image} id="img-food"></img>
+      {NewArrayCopyFoodBreakfast.map((plate: FoodProps) => {
+        return (
+          <div className="container-food">
+            <div>
+              <div className="box-button">
+                <ButtonNew />
+                <IconLove />{" "}
               </div>
-              <div className="box-green-buttons">
-                <ButtonFastOrder />
-                <ButtonAddIngredients />
-              </div>
-              <div className="text-box-about-food">
-                <p className="text-name-food">{plate.name}</p>
-                <p className="price-food">{plate.price}</p>{" "}
-              </div>{" "}
-              <div>
-                <p className="text-about-food">{plate.title}</p>{" "}
-              </div>
+              <img src={plate.image} id="img-food"></img>
             </div>
-          );
-        })}
+            <div className="box-green-buttons">
+              <ButtonFastOrder />
+              <ButtonAddIngredients />
+            </div>
+            <div className="text-box-about-food">
+              <p className="text-name-food">{plate.name}</p>
+              <p className="price-food">{plate.price}</p>{" "}
+            </div>{" "}
+            <div>
+              <p className="text-about-food">{plate.title}</p>{" "}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-
-export default Breakfast
+export default Breakfast;

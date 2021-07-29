@@ -1,15 +1,10 @@
-// import React from "react"
 
-// const Soups = () =>{
-//     return <h1>Soups</h1>
-// }
-// export default Soups
 import React, { useCallback } from "react";
-import ButtonNew from "../menu/buttonNew/buttonNew";
-import "../menu/foodOnMenu/foodOnMenu.css";
-import IconLove from "../menu/iconLove/iconLove";
-import ButtonFastOrder from "../menu/buttonFastOrder/buttonFastOrder";
-import ButtonAddIngredients from "../menu/buttonAddIngredients/buttonAddIngredients";
+import ButtonNew from "../Menu/ButtonNew/buttonNew";
+import "../Menu/FoodOnMenu/foodOnMenu.css";
+import IconLove from "../Menu/IconLove/iconLove";
+import ButtonFastOrder from "../Menu/ButtonFastOrder/buttonFastOrder";
+import ButtonAddIngredients from "../Menu/ButtonAddIngredients/buttonAddIngredients";
 
 interface FoodProps {
   id: number;

@@ -1,12 +1,8 @@
 import React from "react";
-import "../menu/menuPage.css";
-// import FoodOnMenu from "../foodOnMenu/foodOnMenu";
-// import Breakfast from "../../pages/breakfast";
-import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
+import "./menuPage.css";
+import { Link } from "react-router-dom";
 
 const MenuPage = () => {
-  // let { path, url } = useRouteMatch();
-  // console.log("path", path);
   return (
     <div className="menu-big-conteiner">
       <h1 className="h1">
@@ -46,19 +42,6 @@ const MenuPage = () => {
         </Link>
       </ul>
       <div className="food-box-in-menu"></div>
-      {/* <Switch> */}
-                {/* <Route path="./breakfast" component={Breakfast}/> */}
-                {/* <Route path="./dessert" component={Dessert}/>
-      <Route path="/drinks" component={Drinks}/>
-                <Route path="/fitSandwich" component={FitSandwich}/>
-                <Route path="/salad" component={Salad}/>
-                <Route path="/saladPizza" component={SaladPizza}/>
-                <Route path="/soups" component={Soups}/> */}
-      {/* </Switch> */}
-      {/* <Switch> */}
-        {/* <Route path={`/breakfast`} component={Breakfast} /> */}
-        {/* <Route path="./dessert" component={Dessert} /> */}
-      {/* </Switch> */}
     </div>
   );
 };

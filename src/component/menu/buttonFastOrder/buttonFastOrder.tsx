@@ -1,8 +1,8 @@
 import React from "react";
-import "../buttonFastOrder/buttonFastOrder.css";
+import "./buttonFastOrder.css";
 import { Link } from "react-router-dom";
 
-function buttonFastOrder(){
+function buttonFastOrder() {
   return (
     <Link to="#">
       <button className="app-header-content-response" id="buttonFastOrder">
@@ -10,6 +10,6 @@ function buttonFastOrder(){
       </button>
     </Link>
   );
-};
+}
 
 export default buttonFastOrder;

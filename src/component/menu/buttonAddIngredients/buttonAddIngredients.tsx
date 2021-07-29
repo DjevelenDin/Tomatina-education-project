@@ -1,5 +1,5 @@
 import React from "react";
-import "../buttonAddIngredients/buttonAddIngredients.css";
+import "./buttonAddIngredients.css";
 import { Link } from "react-router-dom";
 
 const buttonAddIngredients = () => {
