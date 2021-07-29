@@ -1,0 +1,38 @@
+.big-container-contact{
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+}
+.contact-components{
+    width: 350px;
+    padding: 50px 20px;
+}
+.contact-components-context{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+.adderess{
+    margin: 0px;
+}
+.contact-name{
+    font-size: 20px;
+    text-align: left;
+}
+.icons-plus-text{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.text-contact-gray{
+    color: gray;
+  text-align: left;
+  margin: 0px;
+}
+.text-contact{
+    font-size: 16px;
+    text-align: left;
+margin: 0px;
+}
