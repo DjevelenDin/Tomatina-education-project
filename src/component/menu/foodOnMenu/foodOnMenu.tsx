@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ButtonNew from "../buttonNew/buttonNew";
+import ButtonNew from "../ButtonNew/buttonNew";
 import "./foodOnMenu.css";
-import IconLove from "../iconLove/iconLove";
-import ButtonFastOrder from "../buttonFastOrder/buttonFastOrder";
-import ButtonAddIngredients from "../buttonAddIngredients/buttonAddIngredients";
+import IconLove from "../IconLove/iconLove";
+import ButtonAddIngredients from "../ButtonAddIngredients/buttonAddIngredients";
 import { useCallback } from "react";
 
 interface FoodProps {
@@ -26,7 +25,7 @@ const FoodOnMenu = () => {
     console.log(food);
     // setFood(food);
   }, []);
-  
+
   React.useEffect(() => {
     getDate();
   }, []);
@@ -41,7 +40,7 @@ const FoodOnMenu = () => {
                   <ButtonNew />
                   <IconLove />
                 </div>
-                <img src={item.image} id="img-food" alt=''></img>
+                <img src={item.image} id="img-food" alt=""></img>
                 {/* <img src={M} id="img-food"></img> */}
               </div>
               <div className="box-green-buttons">

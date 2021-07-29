@@ -9,7 +9,7 @@ import Footer from "./component/Footer/footer";
 import myAccount from "./component/MyAccount/myAccount";
 import { Menu } from "./component/Pages/menu";
 import Response from "./component/Pages/response";
-import LogIn from "./component/login/loginForm/loginForm";
+import LogIn from "./component/login/LoginForm/loginForm";
 
 import DeliveryArea from "./component/DeliveryArea/deliveryArea";
 import Breakfast from "./component/Pages/breakfast";
