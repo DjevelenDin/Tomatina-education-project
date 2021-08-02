@@ -27,7 +27,9 @@ const HeaderContent = () => {
         </ul>
       </div>
       <div className="app-header-block-btn">
-        <button className="app-header-content-response">Залишити відгук</button>
+        <button className="app-header-content-response"> <Link className='btn_comment' to="/comment">
+            <p>Залишити відгук</p>
+          </Link></button>
         <Link className="icons-heart" to="#">
           <svg
             className="bg"

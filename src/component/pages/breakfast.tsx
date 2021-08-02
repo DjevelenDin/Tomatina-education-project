@@ -38,6 +38,27 @@ const Breakfast = () => {
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
+
+     {NewArrayCopyFoodBreakfast.map((plate:FoodProps)=>{return (
+            <div className="container-food">
+              <div>
+                <div className="box-button">
+                  <ButtonNew />
+                  <IconLove />{" "}
+                </div>
+                <img src={plate.image} id="img-food"></img>
+              </div>
+              <div className="box-green-buttons">
+                {/* <ButtonFastOrder /> */}
+                <ButtonAddIngredients />
+              </div>
+              <div className="text-box-about-food">
+                <p className="text-name-food">{plate.name}</p>
+                <p className="price-food">{plate.price}</p>{" "}
+              </div>{" "}
+              <div>
+                <p className="text-about-food">{plate.title}</p>{" "}
+
       {NewArrayCopyFoodBreakfast.map((plate: FoodProps) => {
         return (
           <div className="container-food">
@@ -45,6 +66,7 @@ const Breakfast = () => {
               <div className="box-button">
                 <ButtonNew />
                 <IconLove />{" "}
+
               </div>
               <img src={plate.image} id="img-food"></img>
             </div>

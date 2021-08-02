@@ -1,0 +1,55 @@
+.container-comment{
+width: 600px;
+border: 1px solid #000;
+height: 500px;
+}
+
+.authorization-block{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+}
+.passwordErrorFirst{
+    margin-left: -2px;
+}
+.passwordError{
+    margin-left: 70px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.errorForLastName{
+    margin-left: 70px;
+}
+
+.sendBtn{
+    background-color: #599921;
+    color: white;
+    border: 1px solid #599921;
+    border-radius: 6px;
+    padding: 18px 30px;
+    width: 400px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.login-form p{
+color: rgb(117, 117, 117);
+}
+.haveAccount{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 250px;
+}
+.signIn{
+    border: none;
+    background-color: initial;
+    color: rgb(117, 117, 117);
+}
