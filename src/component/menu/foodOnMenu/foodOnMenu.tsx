@@ -6,6 +6,7 @@ import ButtonFastOrder from "../buttonFastOrder/buttonFastOrder";
 import ButtonAddIngredients from "../buttonAddIngredients/buttonAddIngredients";
 import { useCallback } from "react";
 
+
 interface FoodProps {
   id: number;
   name: string;
@@ -45,7 +46,7 @@ const FoodOnMenu = () => {
                 {/* <img src={M} id="img-food"></img> */}
               </div>
               <div className="box-green-buttons">
-                {/* <ButtonFastOrder /> */}
+                {/* <ButtonFastOrder/> */}
                 <ButtonAddIngredients />
               </div>
               <div className="text-box-about-food">

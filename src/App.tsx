@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import server from "../src/restApi/server";
 
 import { withFoodService } from "./component/Hoc-helpers";
 import Header from "./component/Header/header";
@@ -20,7 +21,7 @@ import Salad from "./component/Pages/salad";
 import SaladPasta from "./component/Pages/saladPasta";
 import Soups from "./component/Pages/soups";
 import Basket from "./component/Basket/basket";
-
+import Comment from "./component/Comment/comment"
 // import BasketOrder from "./component/cart/basket_order"
 
 import TemporaryDrawer from "./component/Sidebar/sidebar";
@@ -40,6 +41,7 @@ class App extends Component<IAppProps> {
     // const { foodService } = this.props;
     // console.log(foodService)
     // foodService?.getProductsList();
+
     return (
       <div className="container">
         <BrowserRouter>
@@ -69,6 +71,7 @@ class App extends Component<IAppProps> {
                 <Route path="/contacts" component={Contacts} />
                 <Route path="/about" component={About} />
                 <Route path="/myAccount" component={myAccount} />
+                <Route path="/comment" component={Comment} />
               </Switch>
             </div>
           </div>

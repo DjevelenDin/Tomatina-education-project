@@ -47,7 +47,7 @@ const Breakfast = () => {
                 <img src={plate.image} id="img-food"></img>
               </div>
               <div className="box-green-buttons">
-                <ButtonFastOrder />
+                {/* <ButtonFastOrder /> */}
                 <ButtonAddIngredients />
               </div>
               <div className="text-box-about-food">
