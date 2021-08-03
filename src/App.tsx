@@ -30,6 +30,7 @@ import Vacancies from "./component/Vacancies/vacancies";
 import Oferta from "./component/Oferta/oferta";
 import Contacts from "./component/Contacts/contacts";
 import About from "./component/About/about";
+// import ShowProduct from "./component/Function/showProduct";
 
 interface IAppProps {
   foodService?: any;
@@ -69,6 +70,7 @@ class App extends Component<IAppProps> {
                 <Route path="/contacts" component={Contacts} />
                 <Route path="/about" component={About} />
                 <Route path="/myAccount" component={myAccount} />
+                {/* <Route path="/show" component={ShowProduct}/> */}
               </Switch>
             </div>
           </div>
