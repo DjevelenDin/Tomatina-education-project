@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import HeaderCart from "./headerCart/headerCart";
 
 function Cart() {
-//   const { totalPrice, totalCount } = useSelector(({ cart }) => (cart);
+
 
   return (
       <>

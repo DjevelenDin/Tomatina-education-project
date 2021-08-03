@@ -1,0 +1,16 @@
+input[type='radio']{
+
+    display: none;
+}
+.star{
+    margin-top: 40px;
+    cursor: pointer;
+    transition: color 200ms;
+}
+.marks p{
+    margin-top: 15px;
+    color: #599921;
+}
+.stars-container{
+    margin-top: 40px
+}
