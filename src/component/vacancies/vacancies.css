@@ -1,0 +1,12 @@
+.vacan-two-imgs {
+  display: flex;
+  width: 85%;
+  margin: 20px auto;
+}
+.vacan-img-and-name img {
+  border-radius: 2%;
+}
+.vacan-img-and-name h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
