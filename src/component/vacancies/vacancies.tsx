@@ -4,7 +4,9 @@ import "./vacancies.css";
 const Vacancies = () => {
   return (
     <div className="vacan-conteiner">
-      <h1>Приєднуйся до команди <span className="saladGreen">tomatina</span></h1>
+      <h1>
+        Приєднуйся до команди <span className="saladGreen">tomatina</span>
+      </h1>
 
       <div className="vacan-big-conteiner-img">
         <div className="vacan-two-imgs">
@@ -44,4 +46,4 @@ const Vacancies = () => {
   );
 };
 
-export default Vacancies
+export default Vacancies;
