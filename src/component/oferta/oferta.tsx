@@ -1,7 +1,17 @@
 import React from "react";
 import "./oferta.css";
+import { useTranslation } from "react-i18next";
+
 
 const Oferta = () => {
+
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);
+
+  };
+
   return (
     <div className="oferta-conteiner">
       <h1>

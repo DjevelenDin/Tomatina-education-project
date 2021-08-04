@@ -10,7 +10,7 @@ import Footer from "./component/Footer/footer";
 import myAccount from "./component/MyAccount/myAccount";
 import { Menu } from "./component/Pages/menu";
 import Response from "./component/Pages/response";
-import LogIn from "./component/login/LoginForm/loginForm";
+import LogIn from "./component/Login/LoginForm/loginForm";
 
 import DeliveryArea from "./component/DeliveryArea/deliveryArea";
 import Breakfast from "./component/Pages/breakfast";
@@ -22,26 +22,44 @@ import SaladPasta from "./component/Pages/saladPasta";
 import Soups from "./component/Pages/soups";
 import Basket from "./component/Basket/basket";
 import Comment from "./component/Comment/comment";
+// import BasketOrder from "./component/cart/basket_order"
 
 import TemporaryDrawer from "./component/Sidebar/sidebar";
 import MainPage from "./component/MainPage/mainPage";
-import Cart from "./component/cart/cart";
+import Cart from "./component/Cart/cart";
 import Vacancies from "./component/Vacancies/vacancies";
 import Oferta from "./component/Oferta/oferta";
 import Contacts from "./component/Contacts/contacts";
 import About from "./component/About/about";
 
-interface IAppProps {
-  foodService?: any;
-}
+import { useTranslation } from "react-i18next";
 
-class App extends Component<IAppProps> {
-  render() {
-    return (
+
+// interface IAppProps {
+//   foodService?: any;
+// }
+
+// const { foodService } = this.props;
+// console.log(foodService)
+// foodService?.getProductsList();
+
+const App = () => {
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    console.log('okkk');
+    console.log(lang);
+    i18n.changeLanguage(lang);  
+
+  };
+
+  return (
+    <>
       <div className="container">
         <BrowserRouter>
           <div className="app">
             <Header />
+
 
             <div className="app-main-section">
               <Switch>
@@ -73,8 +91,8 @@ class App extends Component<IAppProps> {
           <Footer />
         </BrowserRouter>
       </div>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default withFoodService()(App);

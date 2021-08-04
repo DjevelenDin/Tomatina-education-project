@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import ButtonNew from "../Menu/ButtonNew/buttonNew";
 import "../Menu/FoodOnMenu/foodOnMenu.css";
 import IconLove from "../Menu/IconLove/iconLove";
 import ButtonFastOrder from "../Menu/ButtonFastOrder/buttonFastOrder";
 import ButtonAddIngredients from "../Menu/ButtonAddIngredients/buttonAddIngredients";
+import ButtonNew from "../Menu/ButtonNew/buttonNew";
 
 interface FoodProps {
   id: number;

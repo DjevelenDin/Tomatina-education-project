@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core";
 import BtnForComment from "../Comment/ButtonForComment/buttonForComment";
-import './response.css'
+import "./response.css";
 const useStyles = makeStyles({
   field: {
     marginTop: 20,
@@ -22,15 +22,14 @@ const Response = () => {
     }
   };
   return (
-    <div className='resp'>
+    <div className="resp">
       <form noValidate autoComplete="off" onSubmit={handleSubmit}>
         <TextField
           onChange={(e) => setDetails(e.target.value)}
-          // className={classes.field}
           id="standard-basic"
           label="Залишіть Ваш відгук"
         />
-
+        <br />
         <BtnForComment />
       </form>
     </div>

@@ -8,14 +8,22 @@ import RedBike from "../../../src/images/bike_red.svg";
 
 import Map from "../Map/map";
 import Payment from "../Payment/payment";
+import { useTranslation } from "react-i18next";
 
-const deliveryArea  = ()=>{ 
+const DeliveryArea  = ()=>{ 
+
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);  
+
+  };
     return (
       <>
         <div className="title">
           <h1>
-            {" "}
-            Доставка та <span>оплата</span>{" "}
+         
+          {t("deliveryArea.deliveryAnd")} <span>{t("deliveryArea.pay")}</span>
           </h1>
         </div>
         <div className="fullDeliveryBlock">
@@ -23,30 +31,29 @@ const deliveryArea  = ()=>{
             <div className="bikes-block">
               <div className="green-bike">
                 <div className="firstBike">
-                  {" "}
+                  
                   <img src={GreenBike} alt="GreenBike" />{" "}
                 </div>
                 <div className="first-description">
                   <div className="greenTitle">
                     {" "}
-                    <span className="colorTextGreen">Зелена зона</span>{" "}
+                    <span className="colorTextGreen">{t("deliveryArea.greenZone")}</span>{" "}
                   </div>
                   <div className="list">
                     <ul className="greenList">
                       <li>
-                        Орієнтовний час доставки{" "}
-                        <span className="colorTextGreen">39 хвилин</span>{" "}
+                      {t("deliveryArea.greenZone1")}
+                        <span className="colorTextGreen">  {t("deliveryArea.greenZoneTime")} </span>{" "}
                       </li>
                       <li>
-                        При замовленні від{" "}
-                        <span className="colorTextGreen">250 грн</span>{" "}
-                        привеземо{" "}
-                        <span className="colorTextGreen">БЕЗКОШТОВНО</span>{" "}
+                      {t("deliveryArea.greenZone2")}
+                        <span className="colorTextGreen"> {t("deliveryArea.greenZone250")}</span>{" "}
+                        {t("deliveryArea.greenZone2_2")} 
+                        <span className="colorTextGreen"> {t("deliveryArea.greenZoneFree")} </span>{" "}
                       </li>
                       <li>
-                        При замовленні до{" "}
-                        <span className="colorTextGreen">250 грн</span> вартість
-                        доставки <span className="colorTextGreen">60 грн</span>{" "}
+                        {t("deliveryArea.greenZone2")}
+                        <span className="colorTextGreen"> {t("deliveryArea.greenZone250")} </span> {t("deliveryArea.redDel")} <span className="colorTextGreen"> 60 грн</span>{" "}
                       </li>
                     </ul>
                   </div>
@@ -58,24 +65,25 @@ const deliveryArea  = ()=>{
                   <img src={YellowBike} alt="YellowBike" />{" "}
                 </div>
                 <div className="second-description">
-                  <div className="yellowTitle">Жовта зона</div>
+                  <div className="yellowTitle">{t("deliveryArea.yellowZone")}</div>
                   <div className="list">
                     <ul className="yellowList">
                       <li>
-                        Орієнтовний час доставки{" "}
-                        <span className="colorTextYellow">55 хвилин</span>{" "}
+                      {t("deliveryArea.greenZone1")}{" "}
+                        <span className="colorTextYellow">  {t("deliveryArea.greenZone2time")}</span>
+                      
                       </li>
                       <li>
-                        При замовленні від{" "}
-                        <span className="colorTextYellow">250 грн</span>{" "}
-                        привеземо{" "}
-                        <span className="colorTextYellow">БЕЗКОШТОВНО</span>{" "}
+                      {t("deliveryArea.greenZone2")}{" "}
+                        <span className="colorTextYellow">{t("deliveryArea.yellowZone250")}</span>{" "}
+                        {t("deliveryArea.greenZone2_2")}{" "}
+                        <span className="colorTextYellow"> {t("deliveryArea.yellowZoneFree")}</span>
                       </li>
                       <li>
-                        При замовленні до{" "}
-                        <span className="colorTextYellow">250 грн</span>{" "}
-                        вартість доставки{" "}
-                        <span className="colorTextYellow">60 грн</span>{" "}
+                      {t("deliveryArea.greenZone2")} {" "}
+                         <span className="colorTextYellow"> {t("deliveryArea.yellowZone250")}  </span>
+                         {t("deliveryArea.yellowZone2")}
+                         <span className="colorTextYellow"> {t("deliveryArea.yellowZone60")}</span>
                       </li>
                     </ul>
                   </div>
@@ -88,23 +96,22 @@ const deliveryArea  = ()=>{
                 </div>
                 <div className="third-description">
                   <div className="redTitle">
-                    <span className="colorTextRed">Червона зона</span>{" "}
+                    <span className="colorTextRed">{t("deliveryArea.redZone")}</span>{" "}
                   </div>
                   <div className="list">
                     <ul className="redList">
                       <li>
-                        Орієнтовний час доставки до{" "}
-                        <span className="colorTextRed">65 хвилин</span>{" "}
+                      {t("deliveryArea.greenZone1")}{" "}
+                        <span className="colorTextRed">{t("deliveryArea.redZone65")}</span>{" "}
                       </li>
                       <li>
-                        Мінімальне замовлення{" "}
-                        <span className="colorTextRed">350 грн</span> вартість
-                        доставки <span className="colorTextRed">90 грн</span>{" "}
+                      {t("deliveryArea.redMin")}{" "}
+                        <span className="colorTextRed">{t("deliveryArea.redZone350")}</span> {t("deliveryArea.redDel")} <span className="colorTextRed">{t("deliveryArea.redZone90")}</span>{" "}
                       </li>
                       <li>
-                        При замовленні від{" "}
-                        <span className="colorTextRed">500 грн</span> привеземо{" "}
-                        <span className="colorTextRed">БЕЗКОШТОВНО</span>{" "}
+                      {t("deliveryArea.greenZone2")}
+                        <span className="colorTextRed">{t("deliveryArea.redZone500")}</span> {t("deliveryArea.greenZone2_2")}{" "}
+                        <span className="colorTextRed"> {t("deliveryArea.redZoneFree")}</span>{" "}
                       </li>
                     </ul>
                   </div>
@@ -123,4 +130,4 @@ const deliveryArea  = ()=>{
     );
   }
 
-  export default deliveryArea;
+  export default DeliveryArea;

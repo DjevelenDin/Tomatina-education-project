@@ -2,21 +2,27 @@ import React from "react";
 import "./mainPage.css";
 import { Link } from 'react-router-dom';
 
+import { useTranslation } from "react-i18next";
 
   const MainPage = ()=>{
+    const { t, i18n } = useTranslation();
 
+    const handleClick = (lang: any) => {
+      i18n.changeLanguage(lang);  
+  
+    };
     return (
       <div className="mainPage">
         <div className="forTitle">
           <h1>
-            <span className="saladGreen">Найсалатніша</span> доставка у <br />
-            будь-який куточок Львова та передмістя
+            <span className="saladGreen">{t("mainPage.greenTitle")}</span> {t("mainPage.blackTitle1")} <br />
+            {t("mainPage.blackTitle2")}
           </h1>
 
           <button className="about">
 
           <Link className='about' to="/about">
-            Детальніше
+          {t("mainPage.more")}
           </Link>
             </button>
         </div>

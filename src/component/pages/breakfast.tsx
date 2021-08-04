@@ -28,14 +28,14 @@ const Breakfast = () => {
   React.useEffect(() => {
     getDate();
   }, []);
-
   const NewArrayCopyFoodBreakfast: Array<FoodProps> = [];
   {
     food.filter((item: FoodProps) => {
       if (item.categories === "breakfast") NewArrayCopyFoodBreakfast.push(item);
     });
   }
-  console.log(setFood);
+  console.log(setFood)
+
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
@@ -44,7 +44,7 @@ const Breakfast = () => {
           <div className="container-food">
             <div>
               <div className="box-button">
-                <ButtonNew />
+                <ButtonNew/>
                 <IconLove />{" "}
               </div>
               <img src={plate.image} id="img-food"></img>

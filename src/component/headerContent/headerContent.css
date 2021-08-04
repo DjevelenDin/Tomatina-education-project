@@ -78,3 +78,13 @@ color: #fff;
 /* .btn_comment p{
 	color: #599921 ;
 } */
+
+.changeLanguage{
+	background-color:  #599921;
+	border: none;
+	border-radius: 5px;
+	width: 60px;
+	margin-right: 20px;
+	padding: 10px;
+	color: white;
+}

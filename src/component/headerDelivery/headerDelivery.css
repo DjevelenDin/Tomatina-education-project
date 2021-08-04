@@ -1,3 +1,7 @@
+*{
+	font-size: 12px;
+	font-weight: 200;
+}
 .app-header-delivery-color{
 	position: fixed;
 	background-color: #F5F5F5;
@@ -8,7 +12,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 10px;
 	letter-spacing: 0.05rem;
 	/* position: fixed; */
 	width: 600px;
@@ -16,6 +20,8 @@
 }
 .app-header-delivery p{
 	font-weight: normal;
+	width: 600px;
+
 }
 .app-header-delivery span{
 	margin: 0 40px 0px 10px;
@@ -30,5 +36,6 @@
 	padding: 0px 0px 3px 0px;
 	font-weight: bold;
 	margin: 0;
-	line-height: 15px;
+	width: 350px;
+
 }
