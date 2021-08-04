@@ -47,8 +47,6 @@ const App = () => {
   const { t, i18n } = useTranslation();
 
   const handleClick = (lang: any) => {
-    console.log('okkk');
-    console.log(lang);
     i18n.changeLanguage(lang);  
 
   };
