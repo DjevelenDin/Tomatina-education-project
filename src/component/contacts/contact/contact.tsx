@@ -11,7 +11,7 @@ interface DataInfos {
   phone: string;
   clock: string;
 }
-const Contact = () => {
+const Contact = () => { 
   const { t, i18n } = useTranslation();
 
   const handleClick = (lang: any) => {
