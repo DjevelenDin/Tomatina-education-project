@@ -10,7 +10,7 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 
 import './sidebar.css'
-
+import { useTranslation } from "react-i18next";
 
 
 const useStyles = makeStyles({
@@ -23,6 +23,7 @@ const useStyles = makeStyles({
 });
 
 
+
 export default function TemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
@@ -31,6 +32,12 @@ export default function TemporaryDrawer() {
     bottom: false,
     right: false,
   });
+
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);
+  }
 
   const toggleDrawer = (anchor:any, open:any) => (event:any) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -61,20 +68,20 @@ export default function TemporaryDrawer() {
         ))} */}
 
 <div className="nav_sidebar">
-          <Link className='btn_nav_sidebar' to="/mainPage">
-            <li>Про Томатіну</li>
+          <Link className='btn_nav_sidebar' to="/about">
+            <li>{t("sidebar.aboutTomatina")}</li>
           </Link>
           <Link className='btn_nav_sidebar' to="/delivery">
-            <li>Доставка</li>
+            <li >{t("sidebar.aboutDelivery")}</li>
           </Link>
           <Link className='btn_nav_sidebar' to="/vacancies">
-            <li>Вакансії</li>
+            <li >{t("sidebar.aboutVacations")}</li>
           </Link>
           <Link className='btn_nav_sidebar' to="/oferta">
-            <li>Договір</li>
+            <li >{t("sidebar.aboutDocum")}</li>
           </Link>
           <Link className='btn_nav_sidebar' to="/contacts">
-            <li>Контакти</li>
+            <li >{t("sidebar.aboutContacts")}</li>
           </Link>
           </div>
       </List>

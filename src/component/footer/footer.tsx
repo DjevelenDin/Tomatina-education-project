@@ -2,16 +2,22 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
 
-export default class Footer extends Component {
-  render() {
+import { useTranslation } from "react-i18next";
+
+const Footer = () => { 
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);
+  }
     return (
       <footer>
         <div className="app-footer">
           <div className="app-footer-block">
-           <Link to="/vacancies"> <span> Вакансії</span></Link>
+           <Link to="/vacancies"> <span> {t("footer.vacanc")} </span></Link>
           </div>
           <div className="app-footer-block">
-           <Link to="/oferta"><span>Договір Оферта</span></Link> 
+           <Link to="/oferta"><span> {t("footer.dogovir")} </span></Link> 
           </div>
           <div className="app-footer-block app-footer-block-map">
             <div>
@@ -44,16 +50,17 @@ export default class Footer extends Component {
               </Link>
             </div>
             <div className="app-footer-map">
-              <p>м. Львів</p>
+              <p>{t("footer.city")}</p>
               <p className="app-footer-map-span">
-                ТРЦ Victoria Gardens, 
-                Кульпарківська 226А <br/> 
-                ТРЦ Spartak, Мазепи 1Б <br/>
-                ТРЦ Forum Lviv, Під Дубом 7Б
+              {t("footer.sh")} 
+              {t("footer.street1")}  <br/> 
+
+              {t("footer.sh2")}  <br/>
+              {t("footer.sh3")} 
               </p>
-              <p>с. Сокільники</p>
+              <p>    {t("footer.street2")} </p>
               <p className="app-footer-map-span">
-                ТРЦ King Cross, Стрийська 30
+              {t("footer.street3")} 
               </p>
             </div>
           </div>
@@ -117,13 +124,13 @@ export default class Footer extends Component {
                   <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                 </svg>
               </Link>
-              <span>Пн - Нд з 08:30 до 22:00 </span>
+              <span>{t("footer.week")}</span>
               
               </div>
             </div>
           </div>
           <div className="app-footer-block app-footer-block-line">
-            <span>Слідкуй за нами</span>
+            <span>{t("footer.follow")}</span>
             <Link className="icons-heart icons-margin" to="#">
               <svg
                 className="bg bg-fb"
@@ -187,4 +194,5 @@ export default class Footer extends Component {
       </footer>
     );
   }
-}
+
+export default Footer;

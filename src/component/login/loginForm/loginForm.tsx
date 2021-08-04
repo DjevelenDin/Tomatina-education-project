@@ -6,9 +6,18 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Formik } from "formik";
 import * as yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const LogIn = ()=>{ 
 
+
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);
+  }
+
+  
     const phoneRegExp = /^\+?3?8?(0\d{9})$/;
 
     const validationSchema = yup.object().shape({
@@ -68,12 +77,12 @@ const LogIn = ()=>{
             <div>
               <form onSubmit={handleSubmit}>
                 <div className="authorization-block">
-                  <h1>Зареєструватися</h1>
+                  <h1>{t("loginForm.login")}</h1>
                   <div className="login-form">
                     <div className="UserName">
                       <div className="forName">
                         <input
-                          placeholder="Ваше ім'я"
+                          placeholder={t("loginForm.yourName")}
                           name="name"
                           type="text"
                           value={values.name}
@@ -88,7 +97,7 @@ const LogIn = ()=>{
                         <input
                           className="lastName"
                           name="lastName"
-                          placeholder="Ваше прізвище"
+                          placeholder={t("loginForm.yourLastName")}
                           type="text"
                           value={values.lastName}
                           onChange={handleChange}
@@ -115,7 +124,7 @@ const LogIn = ()=>{
 
                       <input
                         className="email"
-                        placeholder="Ваш емейл"
+                        placeholder={t("loginForm.yourEmail")}
                         name="email"
                         type="email"
                         value={values.email}
@@ -130,7 +139,7 @@ const LogIn = ()=>{
                     <div className="password-container">
                       <div className="forPassword">
                         <input
-                          placeholder="Пароль"
+                          placeholder={t("loginForm.yourPass")}
                           name="password"
                           type="password"
                           value={values.password}
@@ -147,7 +156,7 @@ const LogIn = ()=>{
                       <div className="forConfirmPassword">
                         <input
                           className="checkPassword"
-                          placeholder="Повторіть пароль"
+                          placeholder={t("loginForm.yourPass2")}
                           name="confirmPassword"
                           type="password"
                           value={values.confirmPassword}
@@ -170,7 +179,7 @@ const LogIn = ()=>{
                     onClick={(event: any) => {}}
                     type={"submit"}
                   >
-                    Зареєструватись
+                    {t("loginForm.send")}
                   </button>
                 </div>
               </form>

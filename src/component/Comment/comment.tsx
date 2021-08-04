@@ -5,8 +5,15 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import StarRating from "../StarRating/starRating";
 import Response from "../Response/response";
+import { useTranslation } from "react-i18next";
 
 const Comment = () => {
+  const { t, i18n } = useTranslation();
+
+  const handleClick = (lang: any) => {
+    i18n.changeLanguage(lang);
+  };
+
   const phoneRegExp = /^\+?3?8?(0\d{9})$/;
 
   const validationSchema = yup.object().shape({
@@ -61,11 +68,11 @@ const Comment = () => {
         }) => (
           <form onSubmit={handleSubmit}>
             <div className="authorization-block">
-              <h1>Залишіть відгук</h1>
+              <h1>{t("comment.leaveFeedb")}</h1>
               <div className="UserName">
                 <div className="forName">
                   <input
-                    placeholder="Ваше ім'я"
+                    placeholder={t("comment.yourName")}
                     name="name"
                     type="text"
                     value={values.name}
@@ -80,7 +87,7 @@ const Comment = () => {
                   <input
                     className="lastName"
                     name="lastName"
-                    placeholder="Ваше прізвище"
+                    placeholder={t("comment.yourLastName")}
                     type="text"
                     value={values.lastName}
                     onChange={handleChange}
@@ -106,7 +113,7 @@ const Comment = () => {
 
                 <input
                   className="email"
-                  placeholder="Ваш емейл"
+                  placeholder={t("comment.yourEmail")}
                   name="email"
                   type="email"
                   value={values.email}
@@ -126,7 +133,7 @@ const Comment = () => {
                 disabled={!isValid && !dirty}
                 type={"submit"}
               >
-                Надіслати
+                {t("comment.send")}
               </button>
             </div>
           </form>

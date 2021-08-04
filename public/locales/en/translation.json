@@ -1,0 +1,152 @@
+{
+  "headerContent": {
+    "delivery": "Delivery ",
+    "menu": "Menu",
+    "feedback": "Leave a feedback",
+    "login": "login"
+  },
+
+  "deliveryArea": {
+    "deliveryAnd": "Delivery and",
+    "pay": "pay",
+    "greenZone": "Green zone",
+    "redZone": "Red zone",
+    "yellowZone": "Yellow zone",
+
+    "greenZone1": "Estimated delivery time ",
+    "greenZoneTime": "39 minutes",
+    "greenZone250": "250 UAH",
+    "greenZone60": "60 UAH",
+    "greenZoneFree": "FREE",
+
+    "greenZone2": "When ordering from",
+    "greenZone2_2": "we will bring it for",
+    "greenZone2time": "55 хвилин",
+    "yellowZone2": "When ordering from",
+    "yellowZoneTime": "55 minutes",
+    "yellowZone250": "250 UAH ",
+    "yellowZoneFree": "FREE",
+    "yellowZone60": "60 UAH",
+    "redMin": "Minimal order from ",
+    "redDel": "delivery cost",
+    "redZone350": "350 UAH",
+    "redZone65": "65 minutes",
+    "redZone90": "90 UAH",
+    "redZone500": "500 UAH",
+    "redZoneFree": "FREE"
+  },
+  "mainPage": {
+    "greenTitle": "The",
+    "blackTitle1": "delivery in",
+    "blackTitle2": "salatest Lviv and suburb",
+    "more": "MORE"
+  },
+
+  "about": {
+    "paragraph1": "We are a restaurant of healthy food which cocked on tepan in front of you. Our recipes both for meat-lovers and vegetarians, and vegans, are made by the experienced chief eager with healthy food. Besides, you may order a take-your-way dish by your recipe. Try out our salads and salad pasta of farm-fresh ingredients cooked regarding fitness food principles. Eating at salad bar Tomatina means filling your fit body with well-balanced proteins, toppings, and souses. We highly recommend you to try our main dish salad pasta if you haven’t yet",
+    "paragraph2": "In addition to soups, sandwiches, desserts or original drinks, we offer our main hits - a salad paste and a constructor. This means that in our gastrobar you can choose a ready-made mix from the chef and create it personally, based on your own preferences, and spend no more than 5 minutes on it. Tomatina salad bar has about 50 ingredients and more than 15 sauces, which create individual dishes for every taste. You just choose your favorite ingredients and in a few clicks your author's version is ready. And if you have not yet tasted the salad paste, we recommend you to try this special dish with an Italian character",
+    "titleAbout": "Create your own salad",
+    "pro": "About",
+    "tomat": "Tomatina",
+    "why": "Why loving",
+
+    "1res": "Only fresh food",
+    "1par": "We do not freeze food – only fresh ingredients!",
+
+    "2res": "Original recipes",
+    "2par": "We mix, we surprise, we create special tastes",
+
+    "3res": "Quality control",
+    "3par": " We initiate double and triple check of food quality",
+
+    "4res": "Delivery",
+    "4par": "We deliver healthy food to any part of Lviv and suburb!"
+  },
+
+  "payment": {
+    "payment": "PAY",
+    "payLig": "Pay by LiqPay",
+    "Lig": "Pay online for your order by LiqPay service on the site",
+    "payCart": "Pay by credit card",
+    "Cart": "Our courier have terminal and accepts card for payment",
+    "payCash": "Pay by cash",
+    "Cash": "Pay by cash when you take the order and ask if you need the rest"
+  },
+
+  "contacts": {
+    "name": "Shopping Center 'King Cross Leopolis'",
+    "city": "Sokilnyky",
+    "street": "Stryiska St, 30",
+    "email": "service@tomatina.ua",
+    "phone": "+38 (096) 195 03 87",
+    "clock": "Mn - Sn 10:00 - 22:0",
+
+    "name1": "Shopping Center 'Victoria Gardens'",
+    "city1": "Lviv",
+    "street1": "Kulparkivska St, 226а",
+    "email1": "service@tomatina.ua",
+    "phone1": "+38 (067) 109 51 91",
+    "clock1": "Mn - Sn 10:00 - 22:00",
+
+    "name2": "Shopping Center 'Spartak'",
+    "city2": "Lviv",
+    "street2": "Вул. Мазепи, 1Б",
+    "email2": "service@tomatina.ua",
+    "phone2": "+38 (096) 195 03 87",
+    "clock2": "Mn - Sn 10:00 - 22:00",
+
+    "name3": "Shopping Center 'Forum Lviv'",
+    "city3": "Lviv",
+    "street3": "Pid Dubom St, 7b",
+    "email3": "service@tomatina.ua",
+    "phone3": "+38 (067) 277 06 02",
+    "clock3": "Mn - Sn 10:00 - 22:00"
+  },
+
+  "sidebar": {
+    "aboutTomatina": "ABOUT TOMATINA",
+    "aboutDelivery": "DELIVERY",
+    "aboutVacations": "VACANCIES",
+    "aboutDocum": "CONTRACT",
+    "aboutContacts": "CONTACTS"
+  },
+
+  "loginForm": {
+    "login": "Register",
+    "send": "REGISTER",
+    "yourName": "Your name",
+    "yourLastName": "Your surname",
+    "yourEmail": "Your email",
+    "yourPass": "Password",
+    "yourPass2": "Confirm password"
+  },
+
+  "signIn": {
+    "already": "Already registered?",
+    "sign": "Login"
+  },
+
+  "comment": {
+    "leaveFeedb": "Leave a feedback",
+    "send": "SEND",
+    "yourName": "Your name",
+    "yourLastName": "Your surname",
+    "yourEmail": "Your email"
+  },
+
+  "footer": {
+    "vacanc": "VACANCIES",
+    "dogovir": "Contract Offer",
+    "city": "Lviv",
+
+    "sh": "Shopping Center 'Victoria Gardens',",
+    "street1": "Kulparkivska St, 226а",
+
+    "sh2": "Shopping Center 'Spartak', Mazepy St, 1b",
+    "sh3": "Shopping Center 'Forum Lviv', Pid dubom St, 7b",
+    "street2": "Sokilnyky",
+    "street3": "Shopping Center 'King Cross Leopolis', Stryiska St, 30",
+    "week": "Mon - Sun from 08:30 to 22:00",
+    "follow": "Follow us"
+  }
+}

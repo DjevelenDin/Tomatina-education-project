@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import ButtonNew from "../Menu/ButtonNew/buttonNew";
 import "../Menu/FoodOnMenu/foodOnMenu.css";
 import IconLove from "../Menu/IconLove/iconLove";
 import ButtonFastOrder from "../Menu/ButtonFastOrder/buttonFastOrder";
 import ButtonAddIngredients from "../Menu/ButtonAddIngredients/buttonAddIngredients";
+import ButtonNew from "../Menu/ButtonNew/buttonNew";
 
 interface FoodProps {
   id: number;
@@ -28,45 +28,23 @@ const Breakfast = () => {
   React.useEffect(() => {
     getDate();
   }, []);
-
   const NewArrayCopyFoodBreakfast: Array<FoodProps> = [];
   {
     food.filter((item: FoodProps) => {
       if (item.categories === "breakfast") NewArrayCopyFoodBreakfast.push(item);
     });
   }
+  console.log(setFood)
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
-
-     {NewArrayCopyFoodBreakfast.map((plate:FoodProps)=>{return (
-            <div className="container-food">
-              <div>
-                <div className="box-button">
-                  <ButtonNew />
-                  <IconLove />{" "}
-                </div>
-                <img src={plate.image} id="img-food"></img>
-              </div>
-              <div className="box-green-buttons">
-                {/* <ButtonFastOrder /> */}
-                <ButtonAddIngredients />
-              </div>
-              <div className="text-box-about-food">
-                <p className="text-name-food">{plate.name}</p>
-                <p className="price-food">{plate.price}</p>{" "}
-              </div>{" "}
-              <div>
-                <p className="text-about-food">{plate.title}</p>{" "}
-
       {NewArrayCopyFoodBreakfast.map((plate: FoodProps) => {
         return (
           <div className="container-food">
             <div>
               <div className="box-button">
-                <ButtonNew />
+                <ButtonNew/>
                 <IconLove />{" "}
-
               </div>
               <img src={plate.image} id="img-food"></img>
             </div>
