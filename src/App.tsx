@@ -21,8 +21,7 @@ import Salad from "./component/Pages/salad";
 import SaladPasta from "./component/Pages/saladPasta";
 import Soups from "./component/Pages/soups";
 import Basket from "./component/Basket/basket";
-import Comment from "./component/Comment/comment"
-// import BasketOrder from "./component/cart/basket_order"
+import Comment from "./component/Comment/comment";
 
 import TemporaryDrawer from "./component/Sidebar/sidebar";
 import MainPage from "./component/MainPage/mainPage";
@@ -31,7 +30,6 @@ import Vacancies from "./component/Vacancies/vacancies";
 import Oferta from "./component/Oferta/oferta";
 import Contacts from "./component/Contacts/contacts";
 import About from "./component/About/about";
-// import ShowProduct from "./component/Function/showProduct";
 
 interface IAppProps {
   foodService?: any;
@@ -39,10 +37,6 @@ interface IAppProps {
 
 class App extends Component<IAppProps> {
   render() {
-    // const { foodService } = this.props;
-    // console.log(foodService)
-    // foodService?.getProductsList();
-
     return (
       <div className="container">
         <BrowserRouter>
@@ -73,7 +67,6 @@ class App extends Component<IAppProps> {
                 <Route path="/about" component={About} />
                 <Route path="/myAccount" component={myAccount} />
                 <Route path="/comment" component={Comment} />
-
               </Switch>
             </div>
           </div>

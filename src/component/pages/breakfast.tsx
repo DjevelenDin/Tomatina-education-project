@@ -4,8 +4,6 @@ import IconLove from "../Menu/IconLove/iconLove";
 import ButtonFastOrder from "../Menu/ButtonFastOrder/buttonFastOrder";
 import ButtonAddIngredients from "../Menu/ButtonAddIngredients/buttonAddIngredients";
 import ButtonNew from "../Menu/ButtonNew/buttonNew";
-// import ShowProduct from "../Function/showProduct"
-// import {FoodProps} from "../Function/showProduct"
 
 interface FoodProps {
   id: number;
@@ -30,30 +28,24 @@ const Breakfast = () => {
   React.useEffect(() => {
     getDate();
   }, []);
-  // return (
-  //   <ShowProduct {, "breakfast"}></ShowProduct>
-  // )
- 
-  // ShowProduct( "breakfast")
+
   const NewArrayCopyFoodBreakfast: Array<FoodProps> = [];
   {
     food.filter((item: FoodProps) => {
       if (item.categories === "breakfast") NewArrayCopyFoodBreakfast.push(item);
     });
   }
-  console.log(setFood)
+  console.log(setFood);
 
   return (
- <div className="big-container-food food-box-in-menu menu-big-conteiner">
-
+    <div className="big-container-food food-box-in-menu menu-big-conteiner">
       {NewArrayCopyFoodBreakfast.map((plate: FoodProps) => {
         return (
           <div className="container-food">
             <div>
               <div className="box-button">
-                <ButtonNew/>
+                <ButtonNew />
                 <IconLove />{" "}
-
               </div>
               <img src={plate.image} id="img-food"></img>
             </div>
