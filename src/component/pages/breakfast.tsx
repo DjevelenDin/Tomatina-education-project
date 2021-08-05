@@ -34,8 +34,7 @@ const Breakfast = () => {
       if (item.categories === "breakfast") NewArrayCopyFoodBreakfast.push(item);
     });
   }
-  console.log(setFood)
-
+  console.log(setFood);
 
   return (
     <div className="big-container-food food-box-in-menu menu-big-conteiner">
@@ -43,10 +42,6 @@ const Breakfast = () => {
         return (
           <div className="container-food">
             <div>
-              <div className="box-button">
-                <ButtonNew/>
-                <IconLove />{" "}
-              </div>
               <img src={plate.image} id="img-food"></img>
             </div>
             <div className="box-green-buttons">
