@@ -42,10 +42,6 @@ const Drinks = () => {
         return (
           <div className="container-food">
             <div>
-              <div className="box-button">
-                <ButtonNew />
-                <IconLove />{" "}
-              </div>
               <img src={plate.image} id="img-food"></img>
             </div>
             <div className="box-green-buttons">

@@ -1,4 +1,3 @@
-
 import React, { useCallback } from "react";
 import ButtonNew from "../Menu/ButtonNew/buttonNew";
 import "../Menu/FoodOnMenu/foodOnMenu.css";
@@ -43,10 +42,6 @@ const Soups = () => {
         return (
           <div className="container-food">
             <div>
-              <div className="box-button">
-                <ButtonNew />
-                <IconLove />{" "}
-              </div>
               <img src={plate.image} id="img-food"></img>
             </div>
             <div className="box-green-buttons">
