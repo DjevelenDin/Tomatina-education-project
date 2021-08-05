@@ -10,10 +10,6 @@ import { useTranslation } from "react-i18next";
 const Comment = () => {
   const { t, i18n } = useTranslation();
 
-  const handleClick = (lang: any) => {
-    i18n.changeLanguage(lang);
-  };
-
   const phoneRegExp = /^\+?3?8?(0\d{9})$/;
 
   const validationSchema = yup.object().shape({

@@ -12,7 +12,7 @@ interface FoodProps {
   new: boolean;
   price: number;
   image: string;
-  title: string;
+  title: string; 
 }
 
 const Breakfast = () => {

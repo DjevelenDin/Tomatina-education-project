@@ -9,6 +9,7 @@ const rootReducers = combineReducers({
   cart,
 });
 
-export type AppState = ReturnType<typeof reducers>; //через це не виникає проблем з useSelector(({cart}) в headerCart
+export type AppState = ReturnType<typeof reducers>; 
+//через це не виникає проблем з useSelector(({cart}) в headerCart
 
 export default rootReducers;

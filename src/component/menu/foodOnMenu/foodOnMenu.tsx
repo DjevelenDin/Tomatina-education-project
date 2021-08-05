@@ -5,7 +5,6 @@ import IconLove from "../IconLove/iconLove";
 import ButtonAddIngredients from "../ButtonAddIngredients/buttonAddIngredients";
 import { useCallback } from "react";
 
-
 interface FoodProps {
   id: number;
   name: string;

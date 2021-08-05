@@ -1,28 +1,25 @@
-import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
+import React from "react";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
+import Button from "@material-ui/core/Button";
+import List from "@material-ui/core/List";
+import Divider from "@material-ui/core/Divider";
 
-import { withRouter } from 'react-router';
-import { Link } from 'react-router-dom';
+import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 
-import './sidebar.css'
+import "./sidebar.css";
 import { useTranslation } from "react-i18next";
-
 
 const useStyles = makeStyles({
   list: {
     width: 250,
   },
   fullList: {
-    width: 'auto',
+    width: "auto",
   },
 });
-
-
 
 export default function TemporaryDrawer() {
   const classes = useStyles();
@@ -35,68 +32,56 @@ export default function TemporaryDrawer() {
 
   const { t, i18n } = useTranslation();
 
-  const handleClick = (lang: any) => {
-    i18n.changeLanguage(lang);
-  }
-
-  const toggleDrawer = (anchor:any, open:any) => (event:any) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+  const toggleDrawer = (anchor: any, open: any) => (event: any) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
 
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor:any) => (
+  const list = (anchor: any) => (
     <div
       className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+        [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-   
-
       <Divider />
       <List>
-        {/* {['Про Томатіну', 'Доставка', 'Вакансії', 'Контакти'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InfoIcon /> : <ImportContactsIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))} */}
-
-<div className="nav_sidebar">
-          <Link className='btn_nav_sidebar' to="/about">
+        <div className="nav_sidebar">
+          <Link className="btn_nav_sidebar" to="/about">
             <li>{t("sidebar.aboutTomatina")}</li>
           </Link>
-          <Link className='btn_nav_sidebar' to="/delivery">
-            <li >{t("sidebar.aboutDelivery")}</li>
+          <Link className="btn_nav_sidebar" to="/delivery">
+            <li>{t("sidebar.aboutDelivery")}</li>
           </Link>
-          <Link className='btn_nav_sidebar' to="/vacancies">
-            <li >{t("sidebar.aboutVacations")}</li>
+          <Link className="btn_nav_sidebar" to="/vacancies">
+            <li>{t("sidebar.aboutVacations")}</li>
           </Link>
-          <Link className='btn_nav_sidebar' to="/oferta">
-            <li >{t("sidebar.aboutDocum")}</li>
+          <Link className="btn_nav_sidebar" to="/oferta">
+            <li>{t("sidebar.aboutDocum")}</li>
           </Link>
-          <Link className='btn_nav_sidebar' to="/contacts">
-            <li >{t("sidebar.aboutContacts")}</li>
+          <Link className="btn_nav_sidebar" to="/contacts">
+            <li>{t("sidebar.aboutContacts")}</li>
           </Link>
-          </div>
+        </div>
       </List>
     </div>
   );
 
-  const anchor = 'right';
+  const anchor = "right";
 
   return (
     <div>
-
-        <React.Fragment key={anchor}>
-          <Button   onClick={toggleDrawer(anchor, true)} > 
-          
-          <svg 
+      <React.Fragment key={anchor}>
+        <Button onClick={toggleDrawer(anchor, true)}>
+          <svg
             className="bg"
             width="47"
             height="45"
@@ -110,14 +95,15 @@ export default function TemporaryDrawer() {
               stroke="#518B26"
             ></path>{" "}
           </svg>
-
-          </Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-
-        </React.Fragment>
-       
+        </Button>
+        <Drawer
+          anchor={anchor}
+          open={state[anchor]}
+          onClose={toggleDrawer(anchor, false)}
+        >
+          {list(anchor)}
+        </Drawer>
+      </React.Fragment>
     </div>
   );
 }

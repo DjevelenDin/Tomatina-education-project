@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core";
 import BtnForComment from "../Comment/ButtonForComment/buttonForComment";
+import { useTranslation } from "react-i18next";
 import "./response.css";
+
 const useStyles = makeStyles({
   field: {
     marginTop: 20,
@@ -12,6 +14,8 @@ const useStyles = makeStyles({
 });
 
 const Response = () => {
+  const { t, i18n } = useTranslation();
+
   const classes = useStyles();
   const [details, setDetails] = useState("");
 
@@ -27,7 +31,7 @@ const Response = () => {
         <TextField
           onChange={(e) => setDetails(e.target.value)}
           id="standard-basic"
-          label="Залишіть Ваш відгук"
+          label={t("response.leaveFeedb")}
         />
         <br />
         <BtnForComment />
