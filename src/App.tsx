@@ -5,12 +5,12 @@ import server from "../src/restApi/server";
 
 import { withFoodService } from "./component/Hoc-helpers";
 import Header from "./component/Header/header";
-import Home from "./component/Pages/home";
+
 import Footer from "./component/Footer/footer";
-import myAccount from "./component/MyAccount/myAccount";
+import MyAccount from "./component/MyAccount/myAccount";
 import { Menu } from "./component/Pages/menu";
 import Response from "./component/Pages/response";
-import LogIn from "./component/Login/LoginForm/loginForm";
+import LogIn from "./component/Login/loginForm/loginForm";
 
 import DeliveryArea from "./component/DeliveryArea/deliveryArea";
 import Breakfast from "./component/Pages/breakfast";
@@ -34,7 +34,6 @@ import About from "./component/About/about";
 
 import { useTranslation } from "react-i18next";
 
-
 // interface IAppProps {
 //   foodService?: any;
 // }
@@ -46,13 +45,6 @@ import { useTranslation } from "react-i18next";
 const App = () => {
   const { t, i18n } = useTranslation();
 
-  const handleClick = (lang: any) => {
-    console.log('okkk');
-    console.log(lang);
-    i18n.changeLanguage(lang);  
-
-  };
-
   return (
     <>
       <div className="container">
@@ -60,10 +52,8 @@ const App = () => {
           <div className="app">
             <Header />
 
-
             <div className="app-main-section">
               <Switch>
-                <Route path="/home" component={Home} />
                 <Route path="/menu" exact component={Menu} />
                 <Route path="/menu/breakfast" component={Breakfast} />
                 <Route path="/menu/dessert" component={Dessert} />
@@ -83,7 +73,7 @@ const App = () => {
                 <Route path="/oferta" component={Oferta} />
                 <Route path="/contacts" component={Contacts} />
                 <Route path="/about" component={About} />
-                <Route path="/myAccount" component={myAccount} />
+                <Route path="/myAccount" component={MyAccount} />
                 <Route path="/comment" component={Comment} />
               </Switch>
             </div>

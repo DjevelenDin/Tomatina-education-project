@@ -14,10 +14,6 @@ interface DataInfos {
 const Contact = () => { 
   const { t, i18n } = useTranslation();
 
-  const handleClick = (lang: any) => {
-    i18n.changeLanguage(lang);
-  };
-
   const dateInfo: DataInfos[] = [
     {
       name: `ТРЦ "King Cross Leopolis"`,

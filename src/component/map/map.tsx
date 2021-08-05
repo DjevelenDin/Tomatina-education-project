@@ -7,6 +7,7 @@ export default class Map extends React.Component {
       <>
         <div className="mainMap">
           <iframe
+            title="Map"
             src="https://www.google.com/maps/d/embed?mid=11lozd8MvTw-zopkt3lNBOzeUSxtCe7ZG"
             width="640"
             height="480"

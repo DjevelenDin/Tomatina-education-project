@@ -148,5 +148,24 @@
     "street3": "Shopping Center 'King Cross Leopolis', Stryiska St, 30",
     "week": "Mon - Sun from 08:30 to 22:00",
     "follow": "Follow us"
+  },
+  "HeaderDelivery": {
+    "delType": "Your delivery type:",
+    "self": "Self-pickup",
+    "click": "YOU CAN CLICK HERE TO CHANGE"
+  },
+  "star":{
+    "mark":"Your rating:"
+  },
+  "response":{
+    "leaveFeedb": "Leave a feedback"
+    
+  },
+  "BtnForComment":{
+    "ready": "Ready"
+  },
+  "MyAccount":{
+    "Login": "Login",
+    "into":"Login into"
   }
 }

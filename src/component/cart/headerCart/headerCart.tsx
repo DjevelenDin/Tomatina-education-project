@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import "./headerCart.css";
 
 function HeaderCart() {
-  const { totalPrice, totalCount } = useSelector(({ cart }) => cart);
+  const { totalPrice, totalCount } = useSelector(({ cart:any }) => cart);
 
   return (
     <div>

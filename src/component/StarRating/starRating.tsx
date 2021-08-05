@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import "./starRating.css";
+import { useTranslation } from "react-i18next";
 
 const StarRating = () => {
+  
+  const { t, i18n } = useTranslation();
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
 
   return (
-    <div className='stars-container'>
-      {[...Array(5)].map ((star, i) => {
-        const  ratingValue: any = 1 + i;
+    <div className="stars-container">
+      {[...Array(5)].map((star, i) => {
+        const ratingValue: any = 1 + i;
 
         return (
           <label>
@@ -27,10 +30,10 @@ const StarRating = () => {
             />
           </label>
         );
-        })}
+      })}
 
       <div className="marks">
-        <p>Ваша оцінка: {rating}</p>
+        <p>{t("star.mark")} {rating}</p>
       </div>
     </div>
   );
